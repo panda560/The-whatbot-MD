@@ -3,32 +3,6 @@ Una nueva inversión
 
 <p align="center">
 <img src="https://telegra.ph/file/06db0eb84b88d11d76e6a.jpg" alt="SHIRAORI BOT" width="500"/>
-
-----           
-
-## HEROKU
-
-* Create account and database in mongodb atlas [`watch here`](https://youtu.be/rPqRyYJmx2g)
-* when you already have a database, you just need to take mongourl
-* Put mongourl in Procfile `web: node . --db 'mongourl'`
-* Example `web: node . -- db 'mongodb+srv://ilman:<password>@cluster0.iiede.mongodb.net/ShiraoriBOT?retryWrites=true&w=majority'`
-
-
-## UNTUK PENGGUNA WINDOWS/VPS/RDP
-
-* Unduh & Instal Git [`Klik Disini`](https://git-scm.com/downloads)
-* Unduh & Instal NodeJS [`Klik Disini`](https://nodejs.org/en/download)
-* Unduh & Instal FFmpeg [`Klik Disini`](https://ffmpeg.org/download.html) (**Jangan Lupa Tambahkan FFmpeg ke variabel lingkungan PATH**)
-* Unduh & Instal ImageMagick [`Klik Disini`](https://imagemagick.org/script/download.php)
-
-```bash
-git clone https://github.com/ilmanhdyt/ShiraoriBOT-Md
-cd ShiraoriBOT-Md
-npm install
-npm update
-npm index
-```
-
 ---------
 
 ## TERMUX
@@ -43,11 +17,9 @@ git clone https://github.com/ilmanhdyt/ShiraoriBOT-Md
 cd ShiraoriBOT-Md
 yarn
 npm i -g typescript
-tsc -p ./node_modules/@adiwajshing/baileys
-node .
 ```
 
-## UNTUK PENGGUNA HEROKU
+## HEROKU
 
 ### Instal Buildpack
 * heroku/nodejs
