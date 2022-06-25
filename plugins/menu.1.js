@@ -89,16 +89,6 @@ let message = await prepareWAMessageMedia({ image: {url: 'https://telegra.ph/fil
                displayText: 'descarga',
                id: '.descarga',
              }
-             {
-             quickReplyButton: {
-               displayText: 'descarga',
-               id: '.descarga',
-             }
-             {
-             quickReplyButton: {
-               displayText: 'descarga',
-               id: '.descarga',
-             }
 
            }]
          }
@@ -114,6 +104,6 @@ let message = await prepareWAMessageMedia({ image: {url: 'https://telegra.ph/fil
 
 handler.help = ['prueba']
 handler.tags = ['info']
-handler.command = /^prueba(com|ple)|allmenu$/i
+handler.command = /^prueba(com|ple)|allmenuu$/i
 
 module.exports = handler
