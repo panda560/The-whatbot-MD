@@ -20,14 +20,12 @@ let handler = async function (m, { text, usedPrefix, command }) {
 ━━━━ 「 *Successful Registration* 」━━━━
 
 ╭─• 〘 INFO 〙
-│➥ Nama: ${name}
-│➥ Umur: ${age} Tahun
-│➥ Hadiah: ${prems.includes(who.split`@`[0]) ? '✅ Silahkan chat owner untuk claim hadiah' : '❌ Bukan User Premium'}
+│➥ 𝙽𝚘𝚖𝚋𝚛𝚎: ${name}
+│➥ 𝙴𝚍𝚊𝚍: ${age} años
+│➥ 𝙿𝚛𝚎𝚖𝚒𝚞𝚖: ${prems.includes(who.split`@`[0]) ? '✅ 𝚂𝚒 𝚎𝚜 𝚞𝚗 𝚞𝚜𝚞𝚊𝚛𝚒𝚘 𝚙𝚛𝚎𝚖𝚒𝚞𝚖' : '❌ 𝙽𝚘 𝚎𝚜 𝚞𝚗 𝚞𝚜𝚞𝚊𝚛𝚒𝚘 𝚙𝚛𝚎𝚖𝚒𝚞𝚖'}
 ╰──────•
 
-Ketik ${usedPrefix} untuk mendapatkan SERIAL NUMBER\n
-sn digunakan untuk unregister
-`.trim())
+ 𝘌𝘴𝘤𝘳𝘪𝘣𝘢 ${usedPrefix} 𝘱𝘢𝘳𝘢 𝘰𝘣𝘵𝘦𝘯𝘦𝘳 𝘵𝘶 𝘯𝘶𝘮𝘦𝘳𝘰 𝘥𝘦 𝘴𝘦𝘳𝘪𝘦 𝘺 𝘦𝘭𝘪𝘮𝘪𝘯𝘢𝘳 𝘵𝘶 𝘳𝘦𝘨𝘪𝘴𝘵𝘳𝘰`.trim())
 }
 handler.help = ['daftar', 'register'].map(v => v + ' <nama>.<umur>')
 handler.tags = ['xp', 'main']
