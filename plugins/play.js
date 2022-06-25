@@ -64,7 +64,7 @@ let anu =  `
            }]
          }
        }
-     }), { userJid: m.sender, quoted: m });
+     }),);
     //conn.reply(m.chat, text.trim(), m)
     return await conn.relayMessage(
          m.chat,
