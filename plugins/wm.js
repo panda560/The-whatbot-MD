@@ -1,49 +1,26 @@
-const { sticker1, sticker5 } = require('../lib/sticker')
+let { addExif } = require('../lib/sticker.js')
 
-let handler = async (m, { conn, text }) => {
-    let stiker = false
-    try {
-    	let [packname, ...author] = text.split`|`
-        author = (author || []).join`|`
-        let q = m.quoted ? m.quoted : m
-        let mime = (q.msg || q).mimetype || ''
-        if (/webp/.test(mime)) {
-            let img = await q.download()
-            if (!img) throw `balas stiker dengan perintah ${usedPrefix + command} <packname>|<author>`
-            stiker = await sticker5(img, false, packname || '', author || '')
-        } else if (/image/.test(mime)) {
-            let img = await q.download()
-            if (!img) throw `balas stiker dengan perintah ${usedPrefix + command} <packname>|<author>`
-            stiker = await sticker5(img, false, packname || '', author || '')
-        } else if (/video/.test(mime)) {
-            if ((q.msg || q).seconds > 10) return m.reply('max is 10 seconds!')
-            let img = await q.download()
-            if (!img) throw `balas stiker dengan perintah ${usedPrefix + command} <packname>|<author>`
-            stiker = await sticker5(img, false, packname || '', author || '')
-        } else if (m.quoted.text) {
-            if (isUrl(m.quoted.text)) stiker = await sticker(false, m.quoted.text, packname || '', author || '')
-            else throw 'URL is not valid! end with jpg/gif/png'
-        }
-    } catch (e) {
-        throw e
-    }
-    finally {
-        if (stiker) {
-          m.reply(stiker_wait)
-            await conn.sendFile(m.chat, stiker, 'stiker.webp', '', m)
-        }
-        else {
-
-            throw 0
-        }
-    }
+let handler = async (m, { conn, text, usedPrefix, command }) => {
+  if (!m.quoted) throw `Balas stiker dengan perintah *${usedPrefix + command}*`
+  let stiker = false
+  try {
+    let [packname, ...author] = text.split('|')
+    author = (author || []).join('|')
+    let mime = m.quoted.mimetype || ''
+    if (!/webp/.test(mime)) throw 'Balas stikernya cokk!'
+    let img = await m.quoted.download()
+    if (!img) throw 'Balas Stiker!'
+    stiker = await addExif(img, packname || '', author || '')
+  } catch (e) {
+    console.error(e)
+    if (Buffer.isBuffer(e)) stiker = e
+  } finally {
+    if (stiker) conn.sendFile(m.chat, stiker, 'wm.webp', '', m, false, { asSticker: true })
+    else throw 'Gagal ngasih wm cokk!\nusahakan kirim terus balas stikernya ya cokk!'
+  }
 }
 handler.help = ['wm <packname>|<author>']
 handler.tags = ['sticker']
-handler.command = /^(wm)$/i
-handler.premium = true
-module.exports = handler
+handler.command = /^wm$/i
 
-const isUrl = (text) => {
-    return text.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)(jpe?g|gif|png|mp4)/, 'gi'))
-}
+module.exports = handler
