@@ -43,21 +43,21 @@ let anu =  `
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
-               displayText: '𝐔𝐑𝐋',
-               url: '${vid.url}',
+               displayText: '',
+               url: '',
              }
 
            },
                {
              quickReplyButton: {
-               displayText: 'video',
+               displayText: '🎵 AUDIO ${filesizeF}',
                id: `.ytmp4 ${vid.url}`,
              }
 
             },
                {
              quickReplyButton: {
-               displayText: 'Audio',
+               displayText: '🎵 AUDIO ${filesizeF}',
                id: `.ytmp3 ${vid.url}`,
              }
 
