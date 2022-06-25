@@ -29,10 +29,10 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
   if (yt2 === false) throw 'erro'
   let { dl_link, thumb, title, filesize, filesizeF } = yt
 let anu =  `
-*titulo:* ${title}
-*peso de Audio:* ${filesizeF}
-*peso de Video:* ${yt2.filesizeF}
-*Server y2mate:* ${usedServer}
+*𝚃𝙸𝚃𝚄𝙻𝙾:* ${title}
+*𝙿𝙴𝚂𝙾 𝙳𝙴 𝙰𝚄𝙳𝙸𝙾:* ${filesizeF}
+*𝙿𝙴𝚂𝙾 𝙳𝙴 𝚅𝙸𝙳𝙴𝙾:* ${yt2.filesizeF}
+*𝚂𝙴𝚁𝚅𝙸𝙳𝙾𝚁:* y2mate ${usedServer}
 `
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
@@ -43,8 +43,8 @@ let anu =  `
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
-               displayText: '',
-               url: ' ',
+               displayText: '𝐔𝐑𝐋',
+               url: '${vid.url}',
              }
 
            },
