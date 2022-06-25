@@ -176,7 +176,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       }
     })
     if (teks == '404') {
-      let judul = `╭─「  𝐒𝐔𝐏𝐄𝐑𝐁𝐎𝐓 - 𝐌𝐃  」\n║\n║❥Hola, ${name} ${ucapan()}\n║\n║❥Version: 1.2.1\n║❥Tu exp es: ${totalexp} \n║\n║❥Tu nivel es:${xp4levelup}\n║\n║❥Modo: Publico\n║❥\n║❥Library: Baileys-MD\n║\n║❥Tiempo activo: ${uptime} ╰────`.trim()
+      let judul = `╭─「  𝐒𝐔𝐏𝐄𝐑𝐁𝐎𝐓 - 𝐌𝐃  」\n║\n║❥Hola, ${name} ${ucapan()}\n║\n║❥Version: 1.2.1\n║❥Tu exp es: ${totalexp} \n║\n║❥Tu nivel es:\n║\n║❥Modo: Publico\n║❥\n║❥Library: Baileys-MD\n║\n║❥Tiempo activo: ${uptime} ╰────`.trim()
       const sections = [
       {
         title: 'Lista Menu ' + namabot,
