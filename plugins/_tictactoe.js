@@ -57,7 +57,7 @@ handler.before = function (m) {
 ${arr.slice(0, 3).join('')}
 ${arr.slice(3, 6).join('')}
 ${arr.slice(6).join('')}
-${isWin ? `@${winner.split('@')[0]} 𝙂𝙖𝙣𝙤! (+${winScore} XP)` : isTie ? `𝙅𝙪𝙚𝙜𝙤 𝙩𝙚𝙧𝙞𝙣𝙤 (+${playScore} XP)` : `𝙜𝙞𝙧𝙤 ${['❌', '⭕'][1 * room.game._currentTurn]} (@${room.game.currentTurn.split('@')[0]})`}
+${isWin ? `@${winner.split('@')[0]} 𝙂𝙖𝙣𝙤! (+${winScore} XP)` : isTie ? `𝙅𝙪𝙚𝙜𝙤 𝙩𝙚𝙧𝙞𝙣𝙤 (+${playScore} XP)` : `𝙏𝙪𝙧𝙣𝙤 𝙙𝙚: ${['❌', '⭕'][1 * room.game._currentTurn]} (@${room.game.currentTurn.split('@')[0]})`}
 
 ❌: @${room.game.playerX.split('@')[0]}
 ⭕: @${room.game.playerO.split('@')[0]}
