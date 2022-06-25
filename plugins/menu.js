@@ -176,7 +176,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       }
     })
     if (teks == '404') {
-      let judul = `╭─「  𝐒𝐔𝐏𝐄𝐑𝐁𝐎𝐓 - 𝐌𝐃  」\n║\n║❥Hola, ${name} ${ucapan()}\n║\n║❥Tu exp es: ${max - exp}\n║❥Tu nivel es: ${_p}levelup \n║\n║❥Tiempo activo: ${uptime}\n╰────`.trim()
+      let judul = `╭─「  𝐒𝐔𝐏𝐄𝐑𝐁𝐎𝐓 - 𝐌𝐃  」\n║\n║❥Hola, ${name} ${ucapan()}\n║\n║❥Modo:${global.opts['self'] ? 'privado' : 'publico'}\n║❥Tu exp es: ${totalexp} \n║\n║❥Tu nivel es:  \n║\n║❥Tiempo activo: ${uptime} ╰────`.trim()
       const sections = [
       {
         title: 'Lista Menu ' + namabot,
