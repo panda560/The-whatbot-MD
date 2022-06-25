@@ -176,7 +176,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       }
     })
     if (teks == '404') {
-      let judul = `╭─「  𝐒𝐔𝐏𝐄𝐑𝐁𝐎𝐓 - 𝐌𝐃  」\n║❥Hola, ${name} ${ucapan()}\n║\n║❥Tu exp es: ${max - exp}\n║❥\n ╰────`.trim()
+      let judul = `╭─「  𝐒𝐔𝐏𝐄𝐑𝐁𝐎𝐓 - 𝐌𝐃  」\n║❥Hola, ${name} ${ucapan()}\n║\n║❥Tu exp es: ${max - exp}\n║❥Tu nivel es: ${_p}levelup \n ╰────`.trim()
       const sections = [
       {
         title: 'Lista Menu ' + namabot,
@@ -298,7 +298,7 @@ function clockString(ms) {
   return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
 }
 function ucapan() {
-  const time = moment.tz('Asia/Jakarta').format('HH')
+  const time = moment.tz('America/Los_Angeles').format('HH')
   res = "welcome✨"
   if (time >= 4) {
     res = "Buenos días espero que tengas un lindo día"
