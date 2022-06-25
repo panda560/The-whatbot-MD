@@ -2,7 +2,7 @@ let limit = 30
 let fetch = require('node-fetch')
 const { servers, ytv } = require('../lib/y2mate')
 let handler = async (m, { conn, args, isPrems, isOwner }) => {
-  if (!args || !args[0]) throw 'ufff. que esta buscando 🤔?'
+  if (!args || !args[0]) throw 'Uhm... urlnya mana?'
   let chat = global.db.data.chats[m.chat]
   let server = (args[1] || servers[0]).toLowerCase()
   let { dl_link, thumb, title, filesize, filesizeF} = await ytv(args[0], servers.includes(server) ? server : servers[0])
@@ -16,8 +16,8 @@ let handler = async (m, { conn, args, isPrems, isOwner }) => {
   try { _thumb = { thumbnail: await (await fetch(thumb)).buffer() } }
   catch (e) { }
   if (!isLimit) conn.sendFile(m.chat, dl_link, title + '.mp4', `
-*Titulo:* ${title}
-*peso:* ${filesizeF}
+*Title:* ${title}
+*Filesize:* ${filesizeF}
 `.trim(), m, false, {
   ..._thumb,
   asDocument: chat.useDocument

@@ -4,7 +4,7 @@ let handler = async (m, { conn,isOwner, isROwner, text }) => {
     let groups = Object.entries(getGroups).slice(0).map(entry => entry[1])
     let anu = groups.map(v => v.id)
     let pesan = m.quoted && m.quoted.text ? m.quoted.text : text
-    if(!pesan) throw 'y texto?'
+    if(!pesan) throw 'teksnya?'
     m.reply(`Mengirim Broadcast Ke ${anu.length} Chat, Waktu Selesai ${anu.length * 0.5} detik`)
     for (let i of anu) {
     await delay(500)
