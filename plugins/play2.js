@@ -28,11 +28,11 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
   if (yt2 === false) throw 'semua server gagal'
   let { dl_link, thumb, title, filesize, filesizeF } = yt
 let anu =  `
-*Judul:* ${title}
-*Ukuran File Audio:* ${filesizeF}
-*Ukuran File Video:* ${yt2.filesizeF}
-*Server y2mate:* ${usedServer}
-*Link Sumber:* 
+*𝚃𝙸𝚃𝚄𝙻𝙾:* ${title}
+*𝙿𝙴𝚂𝙾 𝙳𝙴 𝙰𝚄𝙳𝙸𝙾:* ${filesizeF}
+*𝙿𝙴𝚂𝙾 𝙳𝙴 𝚅𝙸𝙳𝙴𝙾:* ${yt2.filesizeF}
+*𝚂𝙴𝚁𝚅𝙸𝙳𝙾𝚁:* y2mate ${usedServer}
+*𝚄𝚁𝙻:* 
 ${vid.url}
 
 `
@@ -52,21 +52,14 @@ ${vid.url}
            },
                {
              quickReplyButton: {
-               displayText: 'Video 360p',
+               displayText: '📽 VIDEO',
                id: `.ytmp4 ${vid.url}`,
              }
 
             },
                {
              quickReplyButton: {
-               displayText: 'Video 720p',
-               id: `.ytv720 ${vid.url}`,
-             }
-
-            },
-               {
-             quickReplyButton: {
-               displayText: 'Audio',
+               displayText: '🎵 AUDIO',
                id: `.ytmp3 ${vid.url}`,
              }
 
