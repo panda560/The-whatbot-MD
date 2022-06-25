@@ -6,11 +6,24 @@ let moment = require('moment-timezone')
 const defaultMenu = {
   before: `
 ╭────ꕥ %me ꕥ────
-│ *hola %name* *bienvenido este bot ds nuevl todavía esta el desarrollo por eso sin algun comando falla no dude el infoma al creador*
-│🔸 tiempo activo: %uptime
-│🔸 modo: ${global.opts['self'] ? 'privado' : 'publico'}
-│🔸 Version: %version
-│🔸 Library: Baileys-MD
+│✾ Version: %version
+│✾ Library: Baileys-MD
+│✾ Mode: ${global.opts['self'] ? 'Self' : 'publik'}
+│✾ Runtime: %uptime
+╰❑
+╭─❑ 「 INFO USER 」 ❑──
+│ ✾ Name: %name
+│ ✾ Status: ---
+│ ✾ Limit: %limit
+│ ✾ Money: %money
+│ ✾ Exp: %totalexp
+│ ✾ Level: %level
+│ ✾ Role: %role
+╰❑
+╭─❑ 「 INFORMASI 」 ❑──
+│ Bot ini masih tahap beta
+│ apabila ada bug/eror harap
+│ lapor ke owner
 ╰❑
 %readmore`.trim(),
   header: '╭─「 %category 」',
@@ -126,7 +139,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     let package = JSON.parse(await fs.promises.readFile(path.join(__dirname, '../package.json')).catch(_ => '{}'))
     let { exp, limit, age, money, level, role, registered } = global.db.data.users[m.sender]
     let { min, xp, max } = levelling.xpRange(level, global.multiplier)
-    let umur = `*${age == '-1' ? 'registarte reg*' : age + '* Thn'}`
+    let umur = `*${age == '-1' ? 'Belum Daftar*' : age + '* Thn'}`
     let name = registered ? global.db.data.users[m.sender].name : conn.getName(m.sender)
     let d = new Date(new Date + 3600000)
     let locale = 'id'
@@ -176,18 +189,18 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       }
     })
     if (teks == '404') {
-      let judul = `hola ${ucapan()}, ${name} bienvenido este bot es nuevo todavía esta el desarrollo por eso si tienen algun erro no dude el infomar al creador`.trim()
+      let judul = `${ucapan()}, ${name}`.trim()
       const sections = [
       {
-        title: 'Lista Menu ' + namabot,
+        title: 'List Menu ' + namabot,
         rows: [
-          { title: 'menu completo', rowId: `${_p}? all` },
-          { title: 'juegos', rowId: `${_p}? game` },
+          { title: 'Semua Perintah', rowId: `${_p}? all` },
+          { title: 'Game', rowId: `${_p}? game` },
           { title: 'XP', rowId: `${_p}? xp` },
           { title: 'Stiker', rowId: `${_p}? stiker` },
           { title: 'Kerang Ajaib', rowId: `${_p}? kerangajaib` },
           { title: 'Quotes', rowId: `${_p}? quotes` },
-          { title: 'Grupo', rowId: `${_p}? grup` },
+          { title: 'Grup', rowId: `${_p}? grup` },
           { title: 'Premium', rowId: `${_p}? premium` },
           { title: 'Internet', rowId: `${_p}? internet` },
           { title: 'Anonymous', rowId: `${_p}? anonymous` },
@@ -211,7 +224,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       footer: wm,
       mentions: await conn.parseMention(judul),
       title: '',
-      buttonText: "seleccione aqui",
+      buttonText: "Klik Disini",
       sections
     }
     return conn.sendMessage(m.chat, listMessage, { quoted: m, mentions: await conn.parseMention(judul), contextInfo: { forwardingScore: 99999, isForwarded: false }})
@@ -299,18 +312,18 @@ function clockString(ms) {
 }
 function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
-  res = "welcome✨"
+  res = "Selamat dinihari"
   if (time >= 4) {
-    res = "buenos dias"
+    res = "Selamat pagi"
   }
   if (time > 10) {
-    res = "buenas tardes"
+    res = "Selamat siang"
   }
   if (time >= 15) {
-    res = "buenas noches"
+    res = "Selamat sore"
   }
   if (time >= 18) {
-    res = "buenos dias"
+    res = "Selamat malam"
   }
   return res
 }
