@@ -15,7 +15,7 @@ let duit = `*╭───── 「 𝐒𝐔𝐏𝐄𝐑𝐁𝐎𝐓 - 𝐌𝐃 
 ╭─「 %category 」
 │ • 
 ╰────\n`
-let message = await prepareWAMessageMedia({ image: {url: 'https://telegra.ph/file/ca517a39ce85c8a4c0479.jpg' }}, { upload: conn.waUploadToServer })
+let message = await prepareWAMessageMedia({ image: {url: 'https://telegra.ph/file/10842a031f39684aa2297.jpg' }}, { upload: conn.waUploadToServer })
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
@@ -32,7 +32,7 @@ let message = await prepareWAMessageMedia({ image: {url: 'https://telegra.ph/fil
                {
              callButton: {
                displayText: 'Telkomsel',
-               phoneNumber: '+62 813-5104-7727'
+               phoneNumber: '9999999'
              }
            },           
                {
