@@ -4,11 +4,11 @@ let fs = require('fs')
 let yts = require('yt-search')
 let fetch = require('node-fetch')
 let handler = async (m, { conn, command, text, usedPrefix }) => {
-  if (!text) throw `uhm.. cari apa?\n\ncontoh:\n${usedPrefix + command} california`
+  if (!text) throw `ufff. que está buscado 🤔?\n\nejemplo:\n${usedPrefix + command} bad Bunny`
   let chat = global.db.data.chats[m.chat]
   let results = await yts(text)
   let vid = results.all.find(video => video.seconds < 3600)
-  if (!vid) throw 'Konten Tidak ditemukan'
+  if (!vid) throw '𝙽𝙾 𝚂𝙴 𝙴𝙽𝙲𝙾𝙽𝚃𝚁𝙰𝚁𝙾𝙽 𝚁𝙴𝚂𝚄𝙻𝚃𝙰𝙳𝙾𝚂'
   let isVideo = /2$/.test(command)
   let yt = false
   let yt2 = false
@@ -24,15 +24,15 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
       m.reply(`Server ${server} error!${servers.length >= i + 1 ? '' : '\nmencoba server lain...'}`)
     }
   }
-  if (yt === false) throw 'semua server gagal'
-  if (yt2 === false) throw 'semua server gagal'
+  if (yt === false) throw '𝚃𝙾𝙳𝙾𝚂 𝙻𝙾𝚂 𝚂𝙴𝚁𝚅𝙸𝙳𝙾𝚁𝙴𝚂 𝙵𝙰𝙻𝙻𝙰𝚁𝙽'
+  if (yt2 === false) throw '𝚃𝙾𝙳𝙾𝚂 𝙻𝙾𝚂 𝚂𝙴𝚁𝚅𝙸𝙳𝙾𝚁𝙴𝚂 𝙵𝙰𝙻𝙻𝙰𝚁𝙽'
   let { dl_link, thumb, title, filesize, filesizeF } = yt
 let anu =  `
-*𝚃𝙸𝚃𝚄𝙻𝙾:* ${title}
-*𝙿𝙴𝚂𝙾 𝙳𝙴 𝙰𝚄𝙳𝙸𝙾:* ${filesizeF}
-*𝙿𝙴𝚂𝙾 𝙳𝙴 𝚅𝙸𝙳𝙴𝙾:* ${yt2.filesizeF}
-*𝚂𝙴𝚁𝚅𝙸𝙳𝙾𝚁:* y2mate ${usedServer}
-*𝚄𝚁𝙻:* 
+*𝚃𝙸𝚃𝚄𝙻𝙾 :* ${title}
+*𝙿𝙴𝚂𝙾 𝙳𝙴 𝙰𝚄𝙳𝙸𝙾 :* ${filesizeF}
+*𝙿𝙴𝚂𝙾 𝙳𝙴 𝚅𝙸𝙳𝙴𝙾 :* ${yt2.filesizeF}
+*𝚂𝙴𝚁𝚅𝙸𝙳𝙾𝚁 :* y2mate ${usedServer}
+*𝚄𝚁𝙻 :* 
 ${vid.url}
 
 `
@@ -76,7 +76,7 @@ ${vid.url}
 }
 handler.help = ['play'].map(v => v + ' <pencarian>')
 handler.tags = ['downloader']
-handler.command = /^(video)$/i
+handler.command = /^(p|play)$/i
 
 handler.exp = 0
 
