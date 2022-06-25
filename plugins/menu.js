@@ -50,7 +50,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   'advanced': 'ADVANCED',
   'quotes': 'MENU QUOTES',
   'info': 'MENU INFO',
-    '': 'Tanpa Kategori',
+    '': 'Tanpa Kategori'
   }
   if (teks == 'game') tags = {
     'game': 'Game',
