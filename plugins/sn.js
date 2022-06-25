@@ -6,7 +6,7 @@ global.Ina = 'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&sc
     if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.sender
     else who = m.sender
     let sn = createHash('md5').update(m.sender).digest('hex')
-    conn.sendTemplateButtonCopy(m.chat, Ina + 'Serial Number', sn, wm, 'Unreg', '.unreg', m)
+    conn.sendTemplateButtonCopy(m.chat, Ina + 'Numero de Serie', sn, wm, 'Unreg', '.unreg', m)
 }
 handler.help = ['sn']
 handler.tags = ['xp']
