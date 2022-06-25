@@ -33,7 +33,7 @@ let handler = async (m, { conn, command, usedPrefix, text, isPrems, isOwner }) =
 }
 handler.help = ['play'].map(v => v + ' <pencarian>')
 handler.tags = ['downloader']
-handler.command = /^(play2)$/i
+handler.command = /^(video)$/i
 
 handler.exp = 3
 handler.limit = false
