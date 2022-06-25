@@ -50,14 +50,14 @@ let anu =  `
            },
                {
              quickReplyButton: {
-               displayText: '🎵 AUDIO ${filesizeF}',
+               displayText: '📽 VIDEO',
                id: `.ytmp4 ${vid.url}`,
              }
 
             },
                {
              quickReplyButton: {
-               displayText: '🎵 AUDIO ${filesizeF}',
+               displayText: '🎵 AUDIO',
                id: `.ytmp3 ${vid.url}`,
              }
 
