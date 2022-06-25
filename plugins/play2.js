@@ -45,8 +45,8 @@ ${vid.url}
             hydratedFooterText: wm, 
             hydratedButtons: [{
              urlButton: {
-               displayText: 'Join Here',
-               url: gc
+               displayText: '',
+               url: ''
              }
 
            },
