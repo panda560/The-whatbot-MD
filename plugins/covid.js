@@ -7,7 +7,7 @@ let handler = async (m, { text }) => {
   if (json.confirmed) m.reply(`
 𝙿𝙰𝙸𝚂 : ${text}
 𝙲𝙾𝙼𝙵𝙸𝚁𝙼𝙰𝙳𝙾𝚂 : ${json.confirmed.value}
-𝚁𝙴𝙲𝚄𝙿𝙴𝚁𝙰𝙳𝙾𝚂d : ${json.recovered.value}
+𝚁𝙴𝙲𝚄𝙿𝙴𝚁𝙰𝙳𝙾𝚂 : ${json.recovered.value}
 𝙵𝙰𝙻𝙻𝙴𝙲𝙸𝙳𝙾𝚂 : ${json.deaths.value}
 𝚄𝙻𝚃𝙸𝙼𝙰 𝙰𝙲𝚃𝚄𝙰𝙻𝙸𝚉𝙰𝙲𝙸𝙾𝙽 : ${json.lastUpdate}
 \n\n2021 © SUPERBOT-MD`.trim())
