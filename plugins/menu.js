@@ -181,7 +181,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       {
         title: 'Lista Menu ' + namabot,
         rows: [
-          { title: 'menu completo', rowId: `${_p}? all` },
+          { title: 'menu completo', rowId: `${_p}? 'all` },
           { title: 'juegos', rowId: `${_p}? game` },
           { title: 'XP', rowId: `${_p}? xp` },
           { title: 'Stiker', rowId: `${_p}? stiker` },
