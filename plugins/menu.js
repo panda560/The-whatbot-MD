@@ -176,7 +176,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       }
     })
     if (teks == '404') {
-      let judul = `╭─「  𝐒𝐔𝐏𝐄𝐑𝐁𝐎𝐓 - 𝐌𝐃  」\n║❥Hola, ${name} ${ucapan()} como estas?\n║\n║❥Tu exp es: %totalexp ╰────`.trim()
+      let judul = `╭─「  𝐒𝐔𝐏𝐄𝐑𝐁𝐎𝐓 - 𝐌𝐃  」\n║❥Hola, ${name} ${ucapan()}\n║\n║❥Tu exp es: ${max - exp}\n║❥\n ╰────`.trim()
       const sections = [
       {
         title: 'Lista Menu ' + namabot,
@@ -301,16 +301,16 @@ function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
   res = "welcome✨"
   if (time >= 4) {
-    res = "buenos dias"
+    res = "Buenos días espero que tengas un lindo día"
   }
   if (time > 10) {
-    res = "buenas tardes"
+    res = "Buenas tardes espero que tengas una linda tarde"
   }
   if (time >= 15) {
-    res = "buenas noches"
+    res = "Buenas noches espero que tengas una linda noche"
   }
   if (time >= 18) {
-    res = "buenos dias"
+    res = "Buenos días espero que tengas un lindo día"
   }
   return res
 }
