@@ -1,8 +1,12 @@
+/**
+ * TOLONG JANGAN GANTI GAMBARNYA,NOMORKU DAN SAWERIAKU
+ * MENDING KALIAN TAMBAHIN NOMOR KALIAN
+*/
 
 const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys')
 let handler = async (m) => {
 let duit = `*╭───── 「 𝐒𝐔𝐏𝐄𝐑𝐁𝐎𝐓 - 𝐌𝐃 」 ──────*
-│ *hola %name* *bienvenido este bot ds nuevl todavía esta el desarrollo por eso sin algun comando falla no dude el infoma al creador*
+│ *hola %name* *bienvenido este bot es nuevo todavía esta el desarrollo por eso sin algun comando falla no dude el infoma al creador*
 │🔸 tiempo activo: %uptime
 │🔸 modo: ${global.opts['self'] ? 'privado' : 'publico'}
 │🔸 Version: %version
@@ -20,15 +24,15 @@ let message = await prepareWAMessageMedia({ image: {url: 'https://telegra.ph/fil
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
-               displayText: '🏧 Saweria',
-               url: 'https://saweria.co/ilmanhdyt'
+               displayText: 'grupo',
+               url: 'https://chat.whatsapp.com/Lus9S60MABnH9lF4Wf2T7k'
              }
 
            },
                {
              callButton: {
-               displayText: 'Telkomsel',
-               phoneNumber: '9999999'
+               displayText: '',
+               phoneNumber: ''
              }
            },           
                {
@@ -49,8 +53,8 @@ let message = await prepareWAMessageMedia({ image: {url: 'https://telegra.ph/fil
      )
 }
 
-handler.help = ['donasi']
+handler.help = ['prueba']
 handler.tags = ['info']
-handler.command = /^menu(com|ple)|allmenuu$/i
+handler.command = /^prueba(com|ple)|prueba$/i
 
 module.exports = handler
