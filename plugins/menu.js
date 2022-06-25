@@ -176,7 +176,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       }
     })
     if (teks == '404') {
-      let judul = `hola ${ucapan()}, ${name} bienvenido este bot es nuevo todavía esta el desarrollo por eso si tienen algun erro no dude el infomar al creador`.trim()
+      let judul = `╭─「  𝐒𝐔𝐏𝐄𝐑𝐁𝐎𝐓 - 𝐌𝐃  」\n║❥Hola, ${name} ${ucapan()} como estas?\n║\n║❥Tu exp es: %totalexp ╰────`.trim()
       const sections = [
       {
         title: 'Lista Menu ' + namabot,
