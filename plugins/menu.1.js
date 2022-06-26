@@ -94,12 +94,12 @@ let message = await prepareWAMessageMedia({ image: {url: 'https://telegra.ph/fil
              quickReplyButton: {
                displayText: 'descarga',
                id: '.descarga',
-             }
+             }, 
              {
              quickReplyButton: {
                displayText: 'OWNER',
                id: '.creator',
-             }
+             }, 
              {
              quickReplyButton: {
                displayText: 'SPEED',
