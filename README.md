@@ -3,6 +3,10 @@ Una nueva inversión
 
 <p align="center">
 <img src="https://telegra.ph/file/06db0eb84b88d11d76e6a.jpg" alt="SHIRAORI BOT" width="500"/>
+
+[![blog](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
+](https://youtu.be/8Tml7lGcV-w)  <img src="https://github.com/siegrin/siegrin/blob/main/Assets/powerup.gif" height="29px">
+
 ---------
 
 ## TERMUX
