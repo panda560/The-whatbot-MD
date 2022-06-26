@@ -36,9 +36,9 @@ Daftar bahasa yang didukung: https://cloud.google.com/translate/docs/languages
     }
 
 }
-handler.help = ['translate'].map(v => v + ' <lang> <teks>')
+handler.help = ['traducir'].map(v => v + ' <lang> <teks>')
 handler.tags = ['tools', 'internet']
-handler.command = /^(tr(anslate)?)$/i
+handler.command = /^(tr(aducir)?)$/i
 handler.limit = false
 handler.fail = null
 handler.exp = 0
