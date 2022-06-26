@@ -86,8 +86,8 @@ let message = await prepareWAMessageMedia({ image: {url: 'https://telegra.ph/fil
            },
                {
              callButton: {
-               displayText: 'owner',
-               id: '.owner',
+               displayText: '',
+               id: '',
              }
            },           
                {
@@ -97,13 +97,13 @@ let message = await prepareWAMessageMedia({ image: {url: 'https://telegra.ph/fil
              }
              {
              quickReplyButton: {
-               displayText: 'descarga',
-               id: '.descarga',
+               displayText: 'OWNER',
+               id: '.creator',
              }
              {
              quickReplyButton: {
-               displayText: 'descarga',
-               id: '.descarga',
+               displayText: 'SPEED',
+               id: '.ping',
              }
 
            }]
