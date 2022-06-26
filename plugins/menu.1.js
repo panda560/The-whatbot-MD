@@ -4,7 +4,7 @@
 const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys')
 let handler = async (m) => {
 let duit = `*╭───── 「 𝐒𝐔𝐏𝐄𝐑𝐁𝐎𝐓 - 𝐌𝐃 」 ──────*
-│ hola, bienvenido este bot es nuevo todavía está el desarrollo 
+│ hola usuario bienvenido este bot es nuevo todavía está el desarrollo 
 │ 🔸*menuprueba*
 └────
 ╭─「 𝙿𝚁𝙸𝙽𝙲𝙸𝙿𝙰𝙻 」
@@ -26,7 +26,10 @@ let duit = `*╭───── 「 𝐒𝐔𝐏𝐄𝐑𝐁𝐎𝐓 - 𝐌𝐃 
 ╰────
 ╭─「 𝙶𝚁𝚄𝙿𝙾  」
 │ • .Kick
-│ • .
+│ • .add
+│ • tagall
+│ • hidetag
+│ • 
 ╰────
 ╭─「  𝙰𝚄𝚂𝙴𝙽𝙲𝙸𝙰𝚂 」
 │ • .Afk
@@ -85,9 +88,9 @@ let message = await prepareWAMessageMedia({ image: {url: 'https://telegra.ph/fil
 
            },
                {
-             callButton: {
-               displayText: '',
-               id: '',
+             quickReplyButton: {
+               displayText: 'owner',
+               id: '.owner',
              }
            },           
                {
@@ -110,6 +113,6 @@ let message = await prepareWAMessageMedia({ image: {url: 'https://telegra.ph/fil
 
 handler.help = ['prueba']
 handler.tags = ['info']
-handler.command = /^prueba(com|ple)|allmenu$/i
+handler.command = /^prueba(com|ple)|allmenuu$/i
 
 module.exports = handler
