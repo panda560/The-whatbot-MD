@@ -1,13 +1,20 @@
-/**
-* create by hyzer official
-* g usah di hapus anjg, gw cape sumpah
-* sc free, bayar pake subs aja udh good
-* jika ada bug/mau request fitur
-* chat me on wa https://wa.me/6287892711054
-* follow my instagram @zexyds_
-**/
+/* 
+ES PREFERIBLE NO CAMBIAR NADA DE AQUÍ SI NO SABES LO QUE HACES
+POR FAVOR NO CAMBIE LOS DATOS QUE PROPORCIONA SEGUIR ELABORANDO ESTE PROYECTO
+PUEDES ESCRIBIRME AL INSTAGRAM SOLO AHÍ REALIZO LA ASISTENCIA
+https://www.instagram.com/gata_dios 
 
-//━━━━━━━━[ DEFAULT SETTINGS ]━━━━━━━━//
+SI HAY ERRORES PREVIO A NO HABER TOCADO NADA DE AQUÍ AVISAME POR FAVOR PARA DAR UNA SOLUCIÓN 
+
+IT IS PREFERRED NOT TO CHANGE ANYTHING HERE IF YOU DON'T KNOW WHAT YOU'RE DOING
+PLEASE DO NOT CHANGE THE DATA PROVIDED CONTINUE DEVELOPING THIS PROJECT
+YOU CAN WRITE ME ON INSTAGRAM ONLY THERE I DO THE ASSISTANCE
+https://www.instagram.com/gata_dios 
+
+IF THERE ARE ERRORS BEFORE HAVING NOT TOUCHED ANYTHING HERE, PLEASE NOTIFY ME TO GIVE A SOLUTION
+*/
+
+// ✩｡:*•.─────  AJUSTE DE BASE  ─────.•*:｡✩
 let { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys')
 let levelling = require('../lib/levelling')
 let fs = require('fs')
@@ -19,33 +26,32 @@ let fetch = require('node-fetch')
 let { perfomance } = require('perf_hooks')
 let moment = require('moment-timezone')
 
-//━━━━━━━━[ DEFAULT MENU ]━━━━━━━━//
+// ✩｡:*•.─────  MENU PREDETERMINADO  ─────.•*:｡✩
 const defaultMenu = {
-  before:`
-┌─「 *${global.namebot}* 」
-├ Hai, %name!
-├ Tersisa *%limit Limit*
-├ Role *%role*
-├ Level *%level (%exp / %maxexp)*
-├ [%xp4levelup]
-├ %totalexp XP secara Total
-│ 
-├ Tanggal: *%week %weton, %date*
-├ Tanggal Islam: *%dateIslamic*
-├ Waktu: *%time*
-│
-├ Uptime: *%uptime (%muptime)*
-├ Database: %rtotalreg dari %totalreg
-├ Memory Used : *${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB*
-└────
+  before:
+`*╭𝄗𝄗𝄗✦ ${global.namebot} ✦𝄗𝄗𝄗⬣*
+ ⎸ ☽ *_Usuario(a)_* » %name
+ ⎸ ☾ *_Limites de Uso_* » *%limit*
+ ⎸ ☽ *_Rango | Rol_* » %role
+ ⎸ ☾ *_Nivel_* » *%level (%exp / %maxexp)*
+ ⎸ ☽ *_Le Falta_* *%xp4levelup* *_para subir de Nivel_*
+ ⎸ ☾ *_Experiencia | XP_* » *%totalexp*
+ ⎸一一一一一一一一一一一一一
+ ⎸ ☽ *_Fecha_* » *%week, %date*
+ ⎸ ☾ *_Hora_* » *%time*
+ ⎸一一一一一一一一一一一一一
+ ⎸ ☽ *_Actividad_* » *%uptime | (%muptime)*
+ ⎸ ☾ *_Respaldo_* » *%rtotalreg* 𝒅𝒆 *%totalreg*
+ ⎸ ☽ *_Memoria en Uso_* » *${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB*
+*╰𝄗𝄗✦ ⍟ ${vs} ✦𝄗𝄗⬣*
 %readmore`.trimStart(), 
-  header: '┌─「 %category 」',
-  body: '├ %cmd %islimit %isPremium',
-  footer: '└────\n', 
-  after: ``,
+  header: '*╭𝄗✦ %category ✦𝄗⬣*',
+  body: `   ⎸ %cmd %islimit %isPremium`,
+  footer: `*╰𝄗𝄗𝄗✦ ⍟ ${vs} ✦𝄗𝄗𝄗⬣*`, 
+  after: '',
 }
 
-//━━━━━━━━[ CATEGORY ]━━━━━━━━//
+// ✩｡:*•.─────  AGRUPACION POR CATEGORIA  ─────.•*:｡✩
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   let tags
   let teks = `${args[0]}`.toLowerCase()
@@ -175,7 +181,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   'photooxy': 'PHOTO OXY MENU', 
   }
 
-//━━━━━━━━[ DATABASE USER ]━━━━━━━━//
+// ✩｡:*•.─────  DATABASE  ─────.•*:｡✩
   try {
     let package = JSON.parse(await fs.promises.readFile(path.join(__dirname, '../package.json')).catch(_ => '{}'))
     let who
@@ -191,10 +197,10 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     let tag = `wa.me/${m.sender.split('@')[0]}`
  m, { contextInfo: { mentionedJid: conn.parseMention(tag) }}
 
-//━━━━━━━━[ TIMER ]━━━━━━━━//
+// ✩｡:*•.─────  TIEMPO  ─────.•*:｡✩
     let d = new Date(new Date + 3600000)
-    let locale = 'id'
-    let wib = moment.tz('Asia/Jakarta').format('HH:mm:ss')
+    let locale = 'es'
+    let wib = moment.tz('America/Bogota').format('HH:mm:ss')
     let week = d.toLocaleDateString(locale, { weekday: 'long' })
     let weton = ['Pahing', 'Pon', 'Wage', 'Kliwon', 'Legi'][Math.floor(d / 84600000) % 5]
     let date = d.toLocaleDateString(locale, {
@@ -225,7 +231,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     let uptime = clockString(_uptime)
     let waktuwib = moment.tz('Asia/Jakarta').format('HH:mm:ss')
 
-//━━━━━━━━[ SETTING HELP ]━━━━━━━━//
+// ✩｡:*•.─────  AJUSTES DE PROTOCOLO - AYUDA  ─────.•*:｡✩
 let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(plugin => {
     return {
       help: Array.isArray(plugin.tags) ? plugin.help : [plugin.help],
@@ -237,7 +243,7 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
     }
   })
 
-//━━━━━━━━[ FAKE REPLY ]━━━━━━━━//
+// ✩｡:*•.─────  IGNORA ESTO  ─────.•*:｡✩
 const fkontak = {
 	"key": {
     "participants":"0@s.whatsapp.net",
@@ -281,111 +287,113 @@ const fdoc = {
    }
    }
 
-//━━━━━━━━[ BAGIAN MENU ]━━━━━━━━//
+// ✩｡:*•.─────  MENU DE INICIO  ─────.•*:｡✩
 if (teks == '404') {
-let menuu = `┌────「 *${namebot}* 」───⬣
-│⬡ Aktif selama ${uptime}
-│⬡ ${Object.keys(global.db.data.users).length} Pengguna
-│⬡ Mode : ${global.opts['self'] ? 'Self' : 'publik'}
-│⬡ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} Chat Terbanned
-│⬡ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} Pengguna Terbanned
-╰──────⬣
-┌────「 *${name}* 」───⬣
-│⬡ Api : ${tag}
-│⬡ Limit : ${limit}
-│⬡ Role : ${role}
-│⬡ Premium : ${global.prem ? 'Yes' : 'No'}
-│⬡ Date : ${week} ${date}
-│⬡ Time : ${wib}
-╰──────────────⬣`
+let menuu = 
+`*╭𝄗𝄗𝄗☆ ${namebot} ☆𝄗𝄗𝄗⬣*
+ ⎸⍟ *_Version Estelar_* ➟ *${vs}*
+ ⎸✪ *_Usuarios_* ➟ *${Object.keys(global.db.data.users).length}* 
+ ⎸✪ *_Activa Durante_* ➟ *${uptime}*
+ ⎸✪ *_Modo_* ➟ *${global.opts['self'] ? '𝑷𝒓𝒊𝒗𝒂𝒅𝒐' : '𝑷𝒖𝒃𝒍𝒊𝒄𝒐'}*
+ ⎸✪ *_Chats Baneados_* ➟ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}*
+ ⎸✪ *_Usuarios Baneados_* ➟ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}*
+*╰𝄗𝄗𝄗𝄗𝄗𝄗𝄗⬣*
+*╭𝄗☆ ${name} ☆𝄗⬣*
+ ⎸✪ *_Enlace_* ➟ *${tag}*
+ ⎸✪ *_Limites de Uso_* ➟ *${limit}*
+ ⎸✪ *_Rango | Rol_* ➟ ${role}
+ ⎸✪ *_Premium_* ➟ ${global.prem ? '✅' : '❌'}
+ ⎸✪ *_Fecha_* ➟ *${week} ${date}* 
+ ⎸✪ *_Hora_* ➟ *${wib}*
+*╰𝄗𝄗𝄗𝄗⬣*`
 const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fromObject({
         listMessage: {
-            title: `${ucapan()} ${name}`,
+            title: `${ucapan()}`,
             description: menuu,
-            buttonText: 'LIST MENU',
+            buttonText: '𝑴𝑬𝑵𝑼 𝑫𝑰𝑵𝑨𝑴𝑰𝑪𝑶',
             listType: 1,
-            footerText: "𝚂𝙸𝙻𝙰𝙷𝙺𝙰𝙽 𝙿𝙸𝙻𝙸𝙷 𝙼𝙴𝙽𝚄 𝙳𝙸 𝙱𝙰𝚆𝙰𝙷",
+            footerText: `*_PRESIONE ESTE MENSAJE_*`,
             mtype: 'listMessage',
             sections: [
               {
                 "rows": [{
-                  "title": ` 👨 OWNER BOT`,
-                  "description": "Nomor Pemilik Bot Chat P/Meminta Save Tidak Akan Di Respon",
+                  "title": `PROPIETARIO(A) BOT`,
+                  "description": "Número de Propietario(a) del Bot",
                   "rowId": `.owner`
                 },{
                   "title": "❗ INFO BOT",
-                  "description": "Menampilkan Menu Info",
+                  "description": "Mostrar el menú de información",
                   "rowId": `${_p}? info`
                 }],
-                "title": "INFORMASI BOT"
+                "title": "INFORMACIÓN SOBRE EL BOT"
               }, {
                 "rows": [{
-                  "title": `│🧾│ SEMUA PERINTAH`,
-                  "description": "Menampilkan Menu All",
+                  "title": `│🧾│ TODOS LOS COMANDOS`,
+                  "description": "Mostrar Todo el Menú",
                   "rowId": '.? all'
                   }, {
-                  "title": "│ 📝│ ABSEN & VOTING",
-                  "description": "Menampilkan Menu Absen",
+                  "title": "│ 📝│ ABSEN Y VOTO",
+                  "description": "Visualización del menú de ausencias",
                   "rowId": `${_p}? absen`
                 }, {
                   "title": "│⛩️│ANIME",
-                  "description": "Menampilkan Menu Anime",
+                  "description": "Visualización del menú de anime",
                   "rowId": `${_p}? anime`
                 }, {
-                  "title": "│🎇│STICKER & CONVERTER",
-                  "description": "Menampilkan Menu Sticker",
+                  "title": "│🎇│STICKER & CONVERTIDOR",
+                  "description": "Mostrar el menú de Sticker",
                   "rowId": `${_p}? sticker`
                 }, {
-                  "title": "│📺│DOWNLOADER",
-                  "description": "Menampilkan Menu Downloader",
+                  "title": "│📺│DESCARGADOR",
+                  "description": "Mostrar el menú del descargador",
                   "rowId": `${_p}? downloader`
                 }, {
                   "title": "│📈│EXP & LIMIT",
-                  "description": "Menampilkan Menu Exp",
+                  "description": "Mostrar el menú Exp",
                   "rowId": `${_p}? xp`
                 }, {
-                  "title": "│🐣│FUN",
-                  "description": "Menampilkan Menu Fun",
+                  "title": "│🐣│DIVERSIÓN",
+                  "description": "Mostrar el menú de diversión",
                   "rowId": `${_p}? fun`
                 }, {
-                  "title": "│🎮│GAME",
-                  "description": "Menampilkan Menu Game",
+                  "title": "│🎮│JUEGO",
+                  "description": "Mostrar el menú del juego",
                   "rowId": `${_p}? game`
                 }, {
                   "title": "│🧰│GITHUB",
-                  "description": "Menampilkan Menu Github",
+                  "description": "Mostrar el menú de Github",
                   "rowId": `${_p}? github`
                 }, {
-                  "title": "│🏢│GROUP",
-                  "description": "Menampilkan Menu Group",
+                  "title": "│🏢│GRUPO",
+                  "description": "Mostrar el menú de grupo",
                   "rowId": `${_p}? group`
                 }, {
-                  "title": "│🖼│IMAGE",
-                  "description": "Menampilkan Menu Image",
+                  "title": "│🖼│IMAGEN",
+                  "description": "Mostrar el menú de imágenes",
                   "rowId": `${_p}? image`
                 }, {
                   "title": "│📡│INTERNET",
-                  "description": "Menampilkan Menu Internet",
+                  "description": "Mostrar el menú de Internet",
                   "rowId": `${_p}? internet`
                 }, {
                   "title": "│🕋│ISLAMIC",
                   "description": "Menampilkan Menu Islam",
                   "rowId": `${_p}? islam`
                 }, {
-                  "title": "│🐚│KERANG",
-                  "description": "Menampilkan Menu Kerang",
+                  "title": "│🐚│MARISCOS",
+                  "description": "Visualización del menú de mariscos",
                   "rowId": `${_p}? kerang`
                 }, {
                   "title": "│✒️│MAKER",
-                  "description": "Menampilkan Menu Maker",
+                  "description": "Mostrar el menú Maker",
                   "rowId": `${_p}? maker`
                 }, {
                   "title": "│👨‍💻│OWNER",
-                  "description": "Menampilkan Menu Owner",
+                  "description": "Mostrar el menú del propietario(a)",
                   "rowId": `${_p}? owner`
                 }, {
-                  "title": "│🎙│PENGUBAH SUARA",
-                  "description": "Menampilkan Menu Voice Changer",
+                  "title": "│🎙│CAMBIO DE VOZ",
+                  "description": "Mostrar el menú del cambiador de voz",
                   "rowId": `${_p}? suara`
                 }, {
                   "title": "│🔝│PREMIUM",
@@ -467,8 +475,8 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
             ...help.filter(menu => menu.tags && menu.tags.includes(tag) && menu.help).map(menu => {
               return menu.help.map(help => {
                 return body.replace(/%cmd/g, menu.prefix ? help : '%p' + help)
-                  .replace(/%islimit/g, menu.limit ? '(Ⓛ)' : '')
-                  .replace(/%isPremium/g, menu.premium ? '(Ⓟ)' : '')
+                  .replace(/%islimit/g, menu.limit ? 'Ⓛ' : '')
+                  .replace(/%isPremium/g, menu.premium ? 'Ⓟ' : '')
                   .trim()
               }).join('\n')
             }),
@@ -496,16 +504,26 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
       readmore: readMore
     }
     
-//━━━━━━━━[ SETTINGS MENU ]━━━━━━━━//
+// ✩｡:*•.─────  AJUSTES DE MENU - DATOS  ─────.•*:｡✩
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    let message = await prepareWAMessageMedia({ image: await (await require('node-fetch')(fotonya2)).buffer()}, { upload: conn.waUploadToServer }) 
-      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-      templateMessage: {
-          hydratedTemplate: {
-            imageMessage: message.imageMessage, 
-            hydratedContentText: text, 
-            hydratedFooterText: wm2, 
-            hydratedButtons: [{
+    //let message = await prepareWAMessageMedia({ image: await (await require('node-fetch')(fotonya2)).buffer()}, { upload: conn.waUploadToServer }) 
+      //const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+     // templateMessage: {
+         // hydratedTemplate: {
+          //  imageMessage: message.imageMessage, 
+           // hydratedContentText: text, 
+          //  hydratedFooterText: `Ⓛ ⇢ Limite\nⓅ ⇢ Premium\nMultiverseBot-MD `, 
+          //  hydratedButtons: [{
+	  
+	  
+    let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu/menuv1.mp4'), gifPlayback: true }, { upload: conn.waUploadToServer })
+     const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+     templateMessage: {
+         hydratedTemplate: {
+           videoMessage: message.videoMessage,
+           hydratedContentText: text.trim(),
+           hydratedFooterText: `Ⓛ ⇢ Limite\nⓅ ⇢ Premium\nMultiverseBot-MD`,
+           hydratedButtons: [{
             urlButton: {
                displayText: 'Website Creator',
                url: web
@@ -553,9 +571,9 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
     throw e
   }
 }
-handler.help = ['menu2', 'help', '?']
+handler.help = ['menuprueba', 'pruebmenu', '?']
 handler.tags = ['main']
-handler.command = /^(menu2|help|\?)$/i
+handler.command = /^(menuprueba|help|\?)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
@@ -570,7 +588,7 @@ handler.exp = 3
 
 module.exports = handler
 
-//━━━━━━━━[  JANGAN DI UBAH  ]━━━━━━━━//
+// ✩｡:*•.─────  IGNORA ESTO  ─────.•*:｡✩
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
 
@@ -585,19 +603,19 @@ function clockString(ms) {
   return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
 }
 function ucapan() {
-  const time = moment.tz('Asia/Jakarta').format('HH')
-  res = "Selamat DiniHari"
+  const time = moment.tz('America/Los_Angeles').format('HH')
+  res = "👋 *BIENVENIDO(A) | WELCOME* 👋"
   if (time >= 4) {
-    res = "Selamat Pagi"
+    res = "🌇 *Buenos Días | Good Morning* ⛅"
   }
-  if (time > 10) {
-    res = "Selamat Siang"
+  if (time >= 11) {
+    res = "🏙️ *Buenas Tardes | Good Afternoon* 🌤️"
   }
   if (time >= 15) {
-    res = "Selamat Sore"
+    res = "🌆 *Buenas tardes | Good Afternoon* 🌥️"
   }
-  if (time >= 18) {
-    res = "Selamat Malam"
+  if (time >= 17) {
+    res = "🌃 *Buenas noches | Good Evening* 💫"
   }
   return res
 }
