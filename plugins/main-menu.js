@@ -329,17 +329,13 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "description": "muestra la lista de exp",
                   "rowId": `${_p}? xp`
                 }, {
-                  "title": "│🐣│FUN",
-                  "description": "Menampilkan Menu Fun",
+                  "title": "│🐣│diversion",
+                  "description": "muestra la lista divertida del bot",
                   "rowId": `${_p}? fun`
                 }, {
                   "title": "│🎮│ juegos",
                   "description": "muestra la lista de juegos para diverti tu grupo",
                   "rowId": `${_p}? game`
-                }, {
-                  "title": "│🧰│GITHUB",
-                  "description": "el gitbut del bot!",
-                  "rowId": `${_p}? github`
                 }, {
                   "title": "│🏢│grupos",
                   "description": "muestra la lista de menu de grupo",
@@ -349,12 +345,8 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "description": "muestra la lista de busqueda de imagenes",
                   "rowId": `${_p}? image`
                 }, {
-                  "title": "│📡│INTERNET",
-                  "description": "Menampilkan Menu Internet",
-                  "rowId": `${_p}? internet`
-                }, {
                   "title": "│✒️│MAKER",
-                  "description": "Menampilkan Menu Maker",
+                  "description": "Muestra el menu maker",
                   "rowId": `${_p}? maker`
                 }, {
                   "title": "│👨‍💻│menu owner",
@@ -369,21 +361,13 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "description": "muestra la lista que solo miembro premium puede usar",
                   "rowId": `${_p}? premium`
                 }, {
-                  "title": "│🐾│STALKER",
-                  "description": "Menampilkan Menu Stalker",
-                  "rowId": `${_p}? stalk`
-                }, {
-                  "title": "│🔗│SHORT LINK",
-                  "description": "Menampilkan Menu Short Link",
+                  "title": "│🔗│grupos de bot",
+                  "description": "grupos de bot ofc",
                   "rowId": `${_p}? shortlink`
                 }, {
-                  "title": "│🛠│TOOLS MENU",
-                  "description": "Menampilkan Menu Tools",
+                  "title": "│🛠│ herramientas",
+                  "description": "Muestra el menu herramientas",
                   "rowId": `${_p}? tools`
-                }, {
-                  "title": "│📃│TEXT MAKER",
-                  "description": "Menampilkan Maker Text",
-                  "rowId": `${_p}? text`
                 }, {
                   "title": "│🧼│HENTAI",
                   "description": "Muestra la lista de menu +18",
@@ -395,10 +379,6 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                 }, {
                   "title": "│⛄│TEXTO PRO",
                   "description": "muestra la lista de texto pro",
-                  "rowId": `${_p}? textpro`
-                }, {
-                  "title": "│💨│PHOTO OXY",
-                  "description": "Menampilkan Photo Oxy Menu",
                   "rowId": `${_p}? textpro`
                 }
                   ],
