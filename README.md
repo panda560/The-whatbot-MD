@@ -21,6 +21,7 @@ git clone https://github.com/ilmanhdyt/ShiraoriBOT-Md
 cd ShiraoriBOT-Md
 yarn
 npm i -g typescript
+npm start 
 ```
 
 ## HEROKU
