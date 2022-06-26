@@ -1,7 +1,3 @@
-// Thanks to TOXIC-DEVIL
-// https://github.com/TOXIC-DEVIL
-
-/**
 let handler = async (m, { conn, args, usedPrefix, command }) => {
     if (!args || !args[0] || args.length === 0) throw `uhm.. nomornya mana?\n\ncontoh:\n${usedPrefix + command} 6281351047727`
     if (args[0].startsWith('0')) throw 'Gunakan kode Negara!'
@@ -46,4 +42,3 @@ function splitM(jid) {
 function toM(jid) {
     return '@' + splitM(jid)
 }
-**/
