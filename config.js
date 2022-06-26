@@ -1,4 +1,4 @@
-//=============『 Utama 』================== //
+//=============『 owner 』================== //
 global.owner = ['56977774748' , '51935116539'] 
 global.mods = [] 
 global.prems = [] 
@@ -15,18 +15,18 @@ global.gopay = '087892711054'
 //=============『 Info Bot 』=================//
 global.namebot = 'superbot-MD'
 global.gc = 'bit.ly/AnyaBot-Group'
-global.web = 'https://github.com/Hyzerr' //ubah jadi website lu, bisa link ig, link github, link yt, klo link gc ntr beda tampilan lagi. 
+global.web = 'https://github.com/Hyzerr' //conviértalo en su sitio web, puede vincular ig, vincular github, vincular yt, si el enlace es gc, la visualización volverá a ser diferente.
 global.price1 = '1 bulan = 10.000\n2 Minggu 7.000\n1 Minggu 5.000'
 
-//=======『 Tampilan Dan Lainnya 』============//
-global.fotonya1 = 'https://telegra.ph/file/e4a2f4339da8a32ad20a1.jpg' //ganti jadi foto bot mu
-global.fotonya2 = 'https://telegra.ph/file/8c471d45b6cedad43cf84.jpg' //ini juga ganti 
-global.lolkey = 'Papah-Chan' //biar mudah ngegantinya semisal apikeynya expired:v
-global.zenzkey = 'BagasPrdn' //ganti jadi apikey lu kalau expired
-global.wm = 'ꜱʜɪʀᴏ ɪᴋᴀꜱᴀᴋɪ ʙᴏᴛ'
+//=======『 Pantalla y más 』============//
+global.fotonya1 = 'https://telegra.ph/file/e4a2f4339da8a32ad20a1.jpg' //cambia a tu foto de bot
+global.fotonya2 = 'https://telegra.ph/file/8c471d45b6cedad43cf84.jpg' //cambiar esto también
+global.lolkey = 'Papah-Chan' //asi que es facil remplazarlo, por ejemplo el apikey esta caducado :v
+global.zenzkey = 'BagasPrdn' //cambiar a su apikey si caduca
+global.wm = 'ꜱuperʙᴏᴛ-MD'
 global.watermark = wm
-global.wm2 = '                     「 𝚂𝙷𝙸𝚁𝙾-𝙼𝙳 あ⁩ 」'
-global.wm3 = '𝚂𝙷𝙸𝚁𝙾-𝙼𝙳'
+global.wm2 = '                     「 superbot-𝙼𝙳 あ⁩ 」'
+global.wm3 = 'superbot-𝙼𝙳'
 global.htki = '––––––『' 
 global.htka = '』––––––'
 global.media = 'https://telegra.ph/file/72168c6f1aaa90315c369.jpg'
@@ -35,9 +35,9 @@ global.wait = '_*tunggu sedang di proses...*_'
 global.eror = '_*Server Error*_'
 global.benar = 'Benar ✅\n'
 global.salah = 'Salah ❌\n'
-global.stiker_wait = 'Stiker sedang dibuat'
-global.packname = '2022'
-global.author = '© Hyzer Official'
+global.stiker_wait = 'espere unos minutos'
+global.packname = 'toma tu sticker'
+global.author = '© superbot-MD'
 
 //=============『 Apikey 』================== //
 global.APIs = { // API Prefix
@@ -80,8 +80,8 @@ global.APIKeys = { // APIKey Here
   'https://api.lolhuman.xyz': 'Deffbotz',
 }
 
-//=============『 RPG GAMES 』================== //
-global.multiplier = 69 // The higher, The harder levelup
+//=============『 JUEGOS | GAMES 』================== //
+global.multiplier = 69 // Cuanto más alto, más difícil subir de nivel
 global.rpg = {
   emoticon(string) {
     string = string.toLowerCase()
@@ -114,7 +114,7 @@ global.rpg = {
   }
 }
 
-//===========『 Jangan Di Ubah 』================ //
+//===========『 No cambies 』================ //
 let fs = require('fs')
 let chalk = require('chalk')
 let file = require.resolve(__filename)
