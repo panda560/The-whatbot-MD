@@ -27,9 +27,9 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.stiker_wait = 'toma tu sticker'
-global.packname = 'superbot-MD'
-global.author = 'superbot'
+global.stiker_wait = 'espere unos minutos'
+global.packname = 'toma tu sticker'
+global.author = 'superbot-MD'
 global.namabot = 'superbot-MD'
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=runner-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
 global.wm = '© ShiraoriBOT-Md • Ilmanhdyt'
