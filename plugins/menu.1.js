@@ -4,7 +4,7 @@
 const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys')
 let handler = async (m) => {
 let duit = `*╭───── 「 𝐒𝐔𝐏𝐄𝐑𝐁𝐎𝐓 - 𝐌𝐃 」 ──────*
-│ hola usuario bienvenido este bot es nuevo todavía está el desarrollo 
+│ hola, bienvenido este bot es nuevo todavía está el desarrollo 
 │ 🔸*menuprueba*
 └────
 ╭─「 𝙿𝚁𝙸𝙽𝙲𝙸𝙿𝙰𝙻 」
@@ -17,16 +17,19 @@ let duit = `*╭───── 「 𝐒𝐔𝐏𝐄𝐑𝐁𝐎𝐓 - 𝐌𝐃 
 │ • 
 ╰────
 ╭─「 𝙽𝙸𝚅𝙴𝙻 & 𝙴𝚇𝙿 」
-│ • 
+│ • .Levelup 
+│ • .reg
+│ • .claim
 ╰────
 ╭─「 𝙿𝚁𝙴𝙼𝙸𝚄𝙼 」
-│ • 
+│ • .Join
 ╰────
 ╭─「 𝙶𝚁𝚄𝙿𝙾  」
-│ • 
+│ • .Kick
+│ • .
 ╰────
 ╭─「  𝙰𝚄𝚂𝙴𝙽𝙲𝙸𝙰𝚂 」
-│ • 
+│ • .Afk
 ╰────
 ╭─「 𝚅𝙾𝚃𝙰𝙲𝙸𝙾𝙽  」
 │ • 
@@ -35,7 +38,8 @@ let duit = `*╭───── 「 𝐒𝐔𝐏𝐄𝐑𝐁𝐎𝐓 - 𝐌𝐃 
 │ • 
 ╰────
 ╭─「 𝚂𝚃𝙸𝙲𝙺𝙴𝚁  」
-│ • 
+│ • .Sticker
+│ • .wm
 ╰────
 ╭─「 𝙼𝙰𝚁𝙺𝙴𝚃  」
 │ • 
@@ -44,7 +48,7 @@ let duit = `*╭───── 「 𝐒𝐔𝐏𝐄𝐑𝐁𝐎𝐓 - 𝐌𝐃 
 │ • 
 ╰────
 ╭─「 𝙸𝙽𝚃𝙴𝚁𝙽𝙴𝚃  」
-│ • 
+│ • .image
 ╰────
 ╭─「 𝙰𝙽𝙸𝙼𝙴  」
 │ • 
@@ -62,7 +66,9 @@ let duit = `*╭───── 「 𝐒𝐔𝐏𝐄𝐑𝐁𝐎𝐓 - 𝐌𝐃 
 │ • 
 ╰────
 ╭─「  𝙾𝚆𝙽𝙴𝚁 」
-│ • 
+│ • .addprem
+│ • .delprem
+│ • .
 ╰────`
 let message = await prepareWAMessageMedia({ image: {url: 'https://telegra.ph/file/10842a031f39684aa2297.jpg' }}, { upload: conn.waUploadToServer })
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -89,6 +95,16 @@ let message = await prepareWAMessageMedia({ image: {url: 'https://telegra.ph/fil
                displayText: 'descarga',
                id: '.descarga',
              }
+             {
+             quickReplyButton: {
+               displayText: 'descarga',
+               id: '.descarga',
+             }
+             {
+             quickReplyButton: {
+               displayText: 'descarga',
+               id: '.descarga',
+             }
 
            }]
          }
@@ -104,6 +120,6 @@ let message = await prepareWAMessageMedia({ image: {url: 'https://telegra.ph/fil
 
 handler.help = ['prueba']
 handler.tags = ['info']
-handler.command = /^prueba(com|ple)|allmenuu$/i
+handler.command = /^prueba(com|ple)|allmenu$/i
 
 module.exports = handler
