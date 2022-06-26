@@ -23,7 +23,7 @@ let moment = require('moment-timezone')
 const defaultMenu = {
   before:`
 ┌─「 *${global.namebot}* 」
-├ Hola, como esta%name!
+├ Hola, como esta %name!
 ├
 ├ *tiempo activo:* *%uptime (%muptime)*
 ├ limite: *%limit Limit*
@@ -473,15 +473,15 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
             hydratedFooterText: wm2, 
             hydratedButtons: [{
             urlButton: {
-               displayText: 'Website Creator',
+               displayText: '',
                url: web
              }
 
            },
              {
              urlButton: {
-               displayText: 'Group Bot', 
-               url: gc
+               displayText: 'Grupo Bot', 
+               url: 'https://chat.whatsapp.com/Lus9S60MABnH9lF4Wf2T7k'
              }
 
            },
@@ -494,8 +494,8 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
            },
                {
              quickReplyButton: {
-               displayText: 'Donasi',
-               id: '.donasi',
+               displayText: '',
+               id: '',
              }
 
            },
@@ -563,7 +563,7 @@ function ucapan() {
     res = "buenas noches espero que tenga linda noche✨"
   }
   if (time >= 18) {
-    res = "buena tarde espero que linda tarde☀️"
+    res = "buenos dias espero que lindo dias✨"
   }
   return res
 }
