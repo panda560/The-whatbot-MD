@@ -1,13 +1,8 @@
 /**
-* create by hyzer official
-* g usah di hapus anjg, gw cape sumpah
-* sc free, bayar pake subs aja udh good
-* jika ada bug/mau request fitur
-* chat me on wa https://wa.me/6287892711054
-* follow my instagram @zexyds_
+*hola si vas a cambia por favor no cambie todo y deja un crédito ya que costo hacer bot bien echo gracias.
 **/
 
-//━━━━━━━━[ DEFAULT SETTINGS ]━━━━━━━━//
+//━━━━━━━━[ CONFIGURACIÓN POR DEFECTO ]━━━━━━━━//
 let { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys')
 let levelling = require('../lib/levelling')
 let fs = require('fs')
@@ -19,7 +14,7 @@ let fetch = require('node-fetch')
 let { perfomance } = require('perf_hooks')
 let moment = require('moment-timezone')
 
-//━━━━━━━━[ DEFAULT MENU ]━━━━━━━━//
+//━━━━━━━━[ MENÚ INICIO ]━━━━━━━━//
 const defaultMenu = {
   before:`
 ─「 *${global.namebot}* 」
@@ -44,7 +39,7 @@ const defaultMenu = {
   after: ``,
 }
 
-//━━━━━━━━[ CATEGORY ]━━━━━━━━//
+//━━━━━━━━[ CATEGORÍA ]━━━━━━━━//
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   let tags
   let teks = `${args[0]}`.toLowerCase()
@@ -174,7 +169,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   'photooxy': 'PHOTO OXY MENU', 
   }
 
-//━━━━━━━━[ DATABASE USER ]━━━━━━━━//
+//━━━━━━━━[ USUARIO DE LA BASE DE DATOS ]━━━━━━━━//
   try {
     let package = JSON.parse(await fs.promises.readFile(path.join(__dirname, '../package.json')).catch(_ => '{}'))
     let who
@@ -190,7 +185,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     let tag = `wa.me/${m.sender.split('@')[0]}`
  m, { contextInfo: { mentionedJid: conn.parseMention(tag) }}
 
-//━━━━━━━━[ TIMER ]━━━━━━━━//
+//━━━━━━━━[ TEMPORIZADOR ]━━━━━━━━//
     let d = new Date(new Date + 3600000)
     let locale = 'id'
     let wib = moment.tz('Asia/Jakarta').format('HH:mm:ss')
@@ -224,7 +219,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     let uptime = clockString(_uptime)
     let waktuwib = moment.tz('Asia/Jakarta').format('HH:mm:ss')
 
-//━━━━━━━━[ SETTING HELP ]━━━━━━━━//
+//━━━━━━━━[ CONFIGURACIÓN DE AYUDA ]━"━━━━━━━//
 let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(plugin => {
     return {
       help: Array.isArray(plugin.tags) ? plugin.help : [plugin.help],
@@ -236,7 +231,7 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
     }
   })
 
-//━━━━━━━━[ FAKE REPLY ]━━━━━━━━//
+//━━━━━━━━[ RESPUESTA FALSA ]━━━━━━━━//
 const fkontak = {
 	"key": {
     "participants":"0@s.whatsapp.net",
@@ -280,7 +275,7 @@ const fdoc = {
    }
    }
 
-//━━━━━━━━[ BAGIAN MENU ]━━━━━━━━//
+//━━━━━━━━[ SECCIÓN DEL MENÚ ]━━━━━━━━//
 if (teks == '404') {
 let menuu = `╭─「 𝐒𝐔𝐏𝐄𝐑𝐁𝐎𝐓 - 𝐌𝐃 」
 ║❥𝙷𝚘𝚕𝚊, ${name} ${ucapan()}
@@ -463,16 +458,16 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
       readmore: readMore
     }
     
-//━━━━━━━━[ SETTINGS MENU ]━━━━━━━━//
+//━━━━━━━━[ AJUSTES MENU ]━━━━━━━━//
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu/menuvid.mp4'), gifPlayback: true }, { upload: conn.waUploadToServer })
-     const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-     templateMessage: {
-         hydratedTemplate: {
-           videoMessage: message.videoMessage,
-           hydratedContentText: text.trim(),
-            hydratedFooterText: wm,
-          hydratedButtons: [{
+    let message = await prepareWAMessageMedia({ image: await (await require('node-fetch')(fotonya2)).buffer()}, { upload: conn.waUploadToServer }) 
+      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+      templateMessage: {
+          hydratedTemplate: {
+            imageMessage: message.imageMessage, 
+            hydratedContentText: text, 
+            hydratedFooterText: wm2, 
+            hydratedButtons: [{
             urlButton: {
                displayText: '',
                url: web
@@ -502,8 +497,8 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
            },
            {
              quickReplyButton: {
-               displayText: 'Credits',
-               id: '.tqto',
+               displayText: 'infobot',
+               id: '.info',
              }
            }]
          }
@@ -537,7 +532,7 @@ handler.exp = 3
 
 module.exports = handler
 
-//━━━━━━━━[  JANGAN DI UBAH  ]━━━━━━━━//
+//━━━━━━━━[  NO CAMBIES  ]━━━━━━━━//
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
 
