@@ -8,16 +8,14 @@ let handler  = async (m, { conn, args, text }) => {
   let { url, width, height } = pickRandom(results) || {}
   if (!url) return m.reply('Not Found')
   conn.sendButtonImg(m.chat, url, `
-*── 「 GOOGLE IMAGE 」 ──*
+*── 「 𝐈𝐌𝐀𝐆𝐄𝐍 」 ──*
 
-${text}
-➸ *width*: ${width}
-➸ *height*: ${height}
+𝚁𝚎𝚜𝚞𝚕𝚝𝚊𝚍𝚘𝚜 𝚍𝚎: ${text}
 `.trim(), wm, 'NEXT', `.gimage ${text}`, m)
 }
-handler.help = ['image <query>', 'gimage <query>', 'googleimage <query>']
+handler.help = ['imagen <text>']
 handler.tags = ['internet']
-handler.command = /^(gimage|googleimage|image)$/i
+handler.command = /^(gimage|image|imagen)$/i
 
 module.exports = handler
 
