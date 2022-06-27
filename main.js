@@ -70,7 +70,8 @@ const { state, saveState } = useSingleFileAuthState(global.authFile)
 const connectionOptions = {
   printQRInTerminal: true,
   auth: state,
-  logger: P({ level: 'silent' })
+  logger: P({ level: 'debug' }),
+  version: [2, 2204, 13]
 }
 
 global.conn = simple.makeWASocket(connectionOptions)
@@ -123,10 +124,10 @@ global.reloadHandler = function (restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate)
   }
 
-  conn.welcome = 'Hai, @user!\nSelamat datang di grup @subject\n\n@desc'
-  conn.bye = 'Selamat tinggal @user!'
-  conn.spromote = '@user sekarang admin!'
-  conn.sdemote = '@user sekarang bukan admin!'
+  conn.welcome = 'bienvenido @user al @subject espero que la pase bien y leer la regla de grupo para no tener problema\n\n@desc disfruta tu estaria el grupo'
+  conn.bye = 'se fue @user'
+  conn.spromote = 'hey @user hora eres admin🤑!'
+  conn.sdemote = 'hey @user ya no sos admin🥺!'
   conn.handler = handler.handler.bind(conn)
   conn.participantsUpdate = handler.participantsUpdate.bind(conn)
   conn.onDelete = handler.delete.bind(conn)

@@ -4,10 +4,10 @@ global.mods = []
 global.prems = [] 
 
 //=============『 Info Owner 』============== //
-global.nameowner = 'superbot-MD'
-global.numberowner = '56977774748'
-global.instagram = '.'
-global.github = '.'
+global.nameowner = 'creador'
+global.numberowner = '56977774748' , '51935116539'
+global.instagram = ''
+global.github = ''
 global.dana = '087892711054'
 global.pulsa = '085212023766'
 global.gopay = '087892711054'
@@ -23,21 +23,21 @@ global.fotonya1 = 'https://telegra.ph/file/e4a2f4339da8a32ad20a1.jpg' //cambia a
 global.fotonya2 = 'https://telegra.ph/file/8c471d45b6cedad43cf84.jpg' //cambiar esto también
 global.lolkey = 'Papah-Chan' //asi que es facil remplazarlo, por ejemplo el apikey esta caducado :v
 global.zenzkey = 'BagasPrdn' //cambiar a su apikey si caduca
-global.wm = 'ꜱuperʙᴏᴛ-MD'
+global.wm = 'superbot-MD'
 global.watermark = wm
-global.wm2 = '                     「 superbot-𝙼𝙳 あ⁩ 」'
+global.wm2 = '                     「 superbot-MD⁩ 」'
 global.wm3 = 'superbot-𝙼𝙳'
 global.htki = '––––––『' 
 global.htka = '』––––––'
-global.media = 'https://telegra.ph/file/72168c6f1aaa90315c369.jpg'
+global.media = 'https://telegra.ph/file/fed1c9d94b37511e570d5.mp4'
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=smurfs-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
 global.wait = '_*tunggu sedang di proses...*_'
 global.eror = '_*Server Error*_'
 global.benar = 'Benar ✅\n'
 global.salah = 'Salah ❌\n'
-global.stiker_wait = 'espere unos minutos'
-global.packname = 'toma tu sticker'
-global.author = '© superbot-MD'
+global.stiker_wait = 'Stiker sedang dibuat'
+global.packname = '2022'
+global.author = '© Hyzer Official'
 
 //=============『 Apikey 』================== //
 global.APIs = { // API Prefix
