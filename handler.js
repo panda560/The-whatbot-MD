@@ -706,9 +706,14 @@ module.exports = {
                             pp = await this.profilePictureUrl(user, 'image')
                         } catch (e) {
                         } finally {
-                            text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Yah,si Beban Masuk Grup').replace('@subject', groupMetadata.subject).replace('@desc', groupMetadata.desc.toString()) :
-                                (chat.sBye || this.bye || conn.bye || 'Sip, Beban Berkurang 1'))
-                                this.sendButtonImg(id, pp, text, "Group Message", "Hi Beban 👋", "wkwk", null)
+                        text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || 'unknow') :
+                            (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', await this.getName(user))
+                        //this.sendFile(id, pp, 'pp.jpg', text, null, false, { mentions: [user] })
+    this.sendHydrated(id, text, wm + '\n\n' + botdate, pp, sgc, (action == 'add' ? '𝔹𝕀𝔼ℕ𝕍𝔼ℕ𝕀𝔻𝕆' : '𝔸𝔻𝕀𝕆𝕊'), user.split`@`[0], 'USER', [
+      ['MENU', '/menu'],
+      ['\n\nSOY FEO (≧▽≦)', '...'],
+      [null, null]
+    ], null, false, { mentions: [user] })
                                 }
                     }
                 }
