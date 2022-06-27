@@ -3,7 +3,7 @@ let split = '|'
 let handler = async (m, { conn, args: [effect], text: txt, usedPrefix, command }) => {
   if (!effect) throw '𝙴𝚜𝚌𝚛𝚒𝚋𝚊 .textpro <𝚗𝚘𝚖𝚋𝚛𝚎 𝚍𝚎𝚕 𝚎𝚏𝚎𝚌𝚝𝚘>\𝚗*𝙴𝚓𝚎𝚖𝚙𝚕𝚘:*\𝚗.textpro a-cinematic-horror superbot \n\n╭─❑ 「 𝐋𝐈𝐒𝐓𝐀 𝐃𝐄 𝐄𝐅𝐄𝐂𝐓𝐎𝐒 」 ❑──\n' + effects.map(v => v.title).join('\n│ • ')
   effect = effect.toLowerCase()
-  if (!effects.find(v => (new RegExp(v.title, 'gi')).test(effect))) throw `[❗] 𝙴𝚕 𝚎𝚏𝚎𝚌𝚝𝚘 *${effect}* 𝚗𝚘 𝚜𝚎 𝚎𝚗𝚌𝚞𝚎𝚗𝚝𝚛𝚊 𝚎𝚗 𝚕𝚊 𝚕𝚒𝚜𝚝𝚊 𝚍𝚎 𝚎𝚏𝚎𝚌𝚝𝚘𝚜`
+  if (!effects.find(v => (new RegExp(v.title, 'gi')).test(effect))) throw `[❗] 𝙴𝙻 𝙴𝙵𝙴𝙲𝚃𝙾 *${effect}* 𝙽𝙾 𝚂𝙴 𝙴𝙽𝙲𝚄𝙴𝙽𝚃𝚁𝙰 𝙴𝙽 𝙰 𝙻𝙸𝚂𝚃𝙰 𝙳𝙴 𝙴𝙵𝙴𝙲𝚃𝙾𝚂`
   let text = txt.replace(new RegExp(effect, 'gi'), '').trimStart()
   if (text.includes(split)) text = text.split(split)
   text = Array.isArray(text) ? text : [text]
