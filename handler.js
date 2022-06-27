@@ -706,14 +706,9 @@ module.exports = {
                             pp = await this.profilePictureUrl(user, 'image')
                         } catch (e) {
                         } finally {
-                        text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || 'unknow') :
-                            (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', await this.getName(user))
-                        //this.sendFile(id, pp, 'pp.jpg', text, null, false, { mentions: [user] })
-    this.sendHydrated(id, text, wm + '\n\n' + botdate, pp, sgc, (action == 'add' ? '𝔹𝕀𝔼ℕ𝕍𝔼ℕ𝕀𝔻𝕆' : '𝔸𝔻𝕀𝕆𝕊'), user.split`@`[0], 'USER', [
-      ['MENU', '/menu'],
-      ['\n\nSOY FEO (≧▽≦)', '...'],
-      [null, null]
-    ], null, false, { mentions: [user] })
+                            text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'se unio✨').replace('@subject', groupMetadata.subject).replace('@desc', groupMetadata.desc.toString()) :
+                                (chat.sBye || this.bye || conn.bye || 'se fue unos menos👋'))
+                                this.sendButtonImg(id, pp, text, "", "", "", null)
                                 }
                     }
                 }
@@ -751,7 +746,7 @@ Untuk mematikan fitur ini, ketik
 
 global.dfail = (type, m, conn) => {
     let msg = {
-        rowner: 'Perintah ini hanya dapat digunakan oleh _*OWWNER!1!1!*_',
+        rowner: 'este comando solo puede ser utilizado por el propietario/owner_',
         owner: 'solo para el propietario/Owner de Bot*_!',
         mods: 'solo para Moderado del bor*_ !',
         premium: 'solo para usuario Premium*_ !',
@@ -759,8 +754,8 @@ global.dfail = (type, m, conn) => {
         private: 'este comando usalos el chat privado del bot!',
         admin: 'este comando solo para admin!',
         botAdmin: 'el bot (yo) primero tiene que ser admini!',
-        unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Manusia.16*',
-        restrict: 'Fitur ini di *disable*!'
+        unreg: 'por favor registrarse para usa esta funcion escribiendo:\n\n*#daftar nombre.edad*\n\nejempo: *#daftar botsito.19*',
+        restrict: 'esta funcion esta apagada!'
     }[type]
     if (msg) return m.reply(msg)
 }
