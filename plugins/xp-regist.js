@@ -21,7 +21,6 @@ Daftar berhasil!
 ╭─「 𝐑𝐄𝐆𝐈𝐒𝐓𝐑𝐎  」
 │ 𝙽𝚘𝚖𝚋𝚛𝚎 : ${name}
 │ 𝙴𝚍𝚊𝚍 : ${age} años
-│ 𝙿𝚛𝚎𝚖𝚒𝚞𝚖 : ${prems.includes(who.split`@`[0]) ? '✅ Si es un usuario premium' : '❌ No es un usuario premium'}
 ╰────
 𝙽𝚞𝚖𝚎𝚛𝚘 𝚍𝚎 𝚂𝚎𝚛𝚒𝚎: 
 ${sn}
