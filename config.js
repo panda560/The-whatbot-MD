@@ -23,19 +23,19 @@ global.fotonya1 = 'https://telegra.ph/file/e4a2f4339da8a32ad20a1.jpg' //cambia a
 global.fotonya2 = 'https://telegra.ph/file/8c471d45b6cedad43cf84.jpg' //cambiar esto también
 global.lolkey = 'Papah-Chan' //asi que es facil remplazarlo, por ejemplo el apikey esta caducado :v
 global.zenzkey = 'BagasPrdn' //cambiar a su apikey si caduca
-global.wm = 'superbot-MD'
+global.wm = '𝑺𝑼𝑷𝑬𝑹𝑩𝑶𝑻 - 𝑴𝑫'
 global.watermark = wm
-global.wm2 = '                     「 superbot-MD⁩ 」'
-global.wm3 = 'superbot-𝙼𝙳'
+global.wm2 = '                     「 𝑺𝑼𝑷𝑬𝑹𝑩𝑶𝑻 - 𝑴𝑫 」'
+global.wm3 = '𝚂𝚄𝙿𝙴𝚁𝙱𝙾𝚃 - 𝙼𝙳'
 global.htki = '––––––『' 
 global.htka = '』––––––'
 global.media = 'https://telegra.ph/file/fed1c9d94b37511e570d5.mp4'
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=smurfs-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
-global.wait = '_*tunggu sedang di proses...*_'
-global.eror = '_*Server Error*_'
-global.benar = 'Benar ✅\n'
-global.salah = 'Salah ❌\n'
-global.stiker_wait = 'Stiker sedang dibuat'
+global.wait = '_*𝙴𝚜𝚙𝚎𝚛𝚎 𝚞𝚗 𝚖𝚘𝚖𝚎𝚗𝚝𝚘 𝚎𝚗 𝚙𝚛𝚘𝚌𝚎𝚜𝚘...*_'
+global.eror = '_*𝙴𝚛𝚛𝚘𝚛 𝚍𝚎𝚕 𝚂𝚎𝚛𝚟𝚒𝚍𝚘𝚛*_'
+global.benar = '𝙲𝚘𝚛𝚛𝚎𝚌𝚝𝚘 ✅\n'
+global.salah = '𝙴𝚚𝚞𝚒𝚟𝚘𝚌𝚊𝚍𝚘 ❌\n'
+global.stiker_wait = '𝚂𝚎 𝚎𝚜𝚝𝚊 𝚌𝚛𝚎𝚊𝚗𝚍𝚘 𝚎𝚕 𝚜𝚝𝚒𝚌𝚔𝚎𝚛...'
 global.packname = '2022'
 global.author = '© Hyzer Official'
 
