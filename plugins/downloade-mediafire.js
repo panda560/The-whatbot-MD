@@ -1,4 +1,4 @@
-let fetch = require('node-fetch')
+/* let fetch = require('node-fetch')
 
 let handler = async (m, { conn, command, text, usedPrefix }) => {
     if (!text) throw `uhm.. urlnya mana?\n\npenggunaan:\n${usedPrefix + command} url\ncontoh:\n${usedPrefix + command} http://www.mediafire.com/file/js0gr2nozcmk9yg/example.txt/file`
@@ -16,3 +16,4 @@ handler.command = /^(mediafire|mf)$/i
 handler.limit = 1
 
 module.exports = handler
+*/
