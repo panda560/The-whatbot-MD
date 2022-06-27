@@ -282,7 +282,25 @@ const fdoc = {
 
 //━━━━━━━━[ BAGIAN MENU ]━━━━━━━━//
 if (teks == '404') {
-let menuu = `╭─「  𝐒𝐔𝐏𝐄𝐑𝐁𝐎𝐓 - 𝐌𝐃  」\n║\n║❥Hola, ${name} ${ucapan()}\n║❥Version: 1.2.1\n║❥Tu nivel es:\n║❥Modo: Publico\n║❥Library: Baileys-MD\n║❥Tiempo activo: ${uptime}\n╰────`
+let menuu = `╭─「 𝐒𝐔𝐏𝐄𝐑𝐁𝐎𝐓 - 𝐌𝐃 」
+║❥𝙷𝚘𝚕𝚊, ${name} ${ucapan()}
+║
+║❥𝙻𝚒𝚖𝚒𝚝𝚎: ${limit}
+║
+║❥𝚁𝚊𝚗𝚐𝚘: ${role}
+║
+║❥𝙿𝚛𝚎𝚖𝚒𝚞𝚖: ${global.prem ? '✓' : '✘'}
+║
+║❥𝙱𝚊𝚗𝚎𝚊𝚍𝚘: ✘
+║
+║❥𝙶𝚛𝚞𝚙𝚘: https://chat.whatsapp.com/Lus9S60MABnH9lF4Wf2T7k
+║
+║❥𝚃𝚒𝚎𝚖𝚙𝚘 𝙰𝚌𝚝𝚒𝚟𝚘: ${uptime}
+║
+║❥ 𝙲𝚑𝚊𝚝𝚜 𝙱𝚊𝚗𝚎𝚊𝚍𝚘𝚜: ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}
+║
+║❥ 𝚄𝚜𝚞𝚊𝚛𝚒𝚘𝚜 𝙱𝚊𝚗𝚎𝚊𝚍𝚘𝚜: ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}
+╰──────────`
 const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fromObject({
         listMessage: {
             title: `${ucapan()} ${name}`,
@@ -447,7 +465,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
     
 //━━━━━━━━[ SETTINGS MENU ]━━━━━━━━//
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu/menuvid.mp4'), gifPlayback: true }, { upload: conn.waUploadToServer }) 
+    let message = await prepareWAMessageMedia({ image: await (await require('node-fetch')(fotonya2)).buffer()}, { upload: conn.waUploadToServer }) 
       const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
       templateMessage: {
           hydratedTemplate: {
