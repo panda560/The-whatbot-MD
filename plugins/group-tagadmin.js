@@ -16,15 +16,15 @@ let handler = async (m, { conn, participants, groupMetadata }) => {
         let { isBanned, welcome, detect, sWelcome, sBye, sPromote, sDemote, antiLink } = global.db.data.chats[m.chat]
         const groupAdmins = getGroupAdmins(participants)
         let listAdmin = groupAdmins.map((v, i) => `${i + 1}. @${v.split('@')[0]}`).join('\n')
-        let text = `*「 TAG ADMIN 」*\n
+        let text = `*「 𝐀𝐃𝐌𝐈𝐍 」*\n
 
-*Name:* 
+*𝙽𝚘𝚖𝚋𝚛𝚎:* 
 ${groupMetadata.subject}
 
-*Group Owner:* 
+*𝙲𝚛𝚎𝚊𝚍𝚘𝚛 𝚍𝚎𝚕 𝙶𝚛𝚞𝚙𝚘:* 
 @${m.chat.split`-`[0]}
 
-*Group Admins:*
+*𝙰𝚍𝚖𝚒𝚗𝚜:*
 ${listAdmin}
 `.trim()
         ownernya = [`${m.chat.split`-`[0]}@s.whatsapp.net`]
@@ -32,9 +32,9 @@ ${listAdmin}
         conn.sendFile(m.key.remoteJid, pp, 'pp.jpg', text, m, false, { contextInfo: { mentionedJid } })
     }
 }
-handler.help = ['tagadmin']
+handler.help = ['admin']
 handler.tags = ['group']
-handler.command = /^(tagadmin)$/i
+handler.command = /^(admin|admins)$/i
 
 handler.group = true
 
