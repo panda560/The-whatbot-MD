@@ -17,8 +17,8 @@ pkg install nodejs
 pkg install ffmpeg
 pkg install imagemagick
 pkg install yarn
-git clone https://github.com/elrebelde21/pruebabot
-cd pruebabot
+git clone https://github.com/elrebelde21/The-whatbot-MD
+cd The-whatbot-MD
 yarn
 npm i -g typescript
 npm start 
