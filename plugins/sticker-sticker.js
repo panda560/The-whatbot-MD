@@ -7,11 +7,11 @@ let handler = async (m, { conn }) => {
         let mime = (q.msg || q).mimetype || ''
         if (/webp/.test(mime)) {
             let img = await q.download()
-            if (!img) throw `𝚁𝚎𝚜𝚙𝚘𝚗𝚍𝚎 𝚊 𝚞𝚗 𝚜𝚝𝚒𝚌𝚔𝚎𝚛 𝚌𝚘𝚗 𝚌𝚘𝚖𝚊𝚗𝚍𝚘 𝚜`
+            if (!img) throw `𝚁𝚎𝚜𝚙𝚘𝚗𝚍𝚎 𝚊 𝚞𝚗 𝚜𝚝𝚒𝚌𝚔𝚎𝚛 𝚌𝚘𝚗 𝚌𝚘𝚖𝚊𝚗𝚍𝚘 .𝚜`
             stiker = await sticker5(img, false, packname, author)
         } else if (/image/.test(mime)) {
             let img = await q.download()
-            if (!img) throw `𝚁𝚎𝚜𝚙𝚘𝚗𝚍𝚎𝚊 𝚞𝚗 𝚒𝚖𝚊𝚐𝚎𝚗 𝚌𝚘𝚗 𝚌𝚘𝚖𝚊𝚗𝚍𝚘 𝚜`
+            if (!img) throw `𝚁𝚎𝚜𝚙𝚘𝚗𝚍𝚎𝚊 𝚞𝚗 𝚒𝚖𝚊𝚐𝚎𝚗 𝚌𝚘𝚗 𝚌𝚘𝚖𝚊𝚗𝚍𝚘 .𝚜`
             stiker = await sticker5(img, false, packname, author)
         } else if (/video/.test(mime)) {
             if ((q.msg || q).seconds > 11) return m.reply('𝚖𝚊𝚡𝚒𝚖𝚘 𝟷𝟶 𝚜𝚎𝚐𝚞𝚗𝚍𝚘𝚜!')
@@ -27,8 +27,8 @@ let handler = async (m, { conn }) => {
     }
     finally {
         if (stiker) {
-            m.reply(stiker_wait)
-            await conn.sendFile(m.chat, stiker, '', '', m)
+          m.reply(stiker_wait)
+            await conn.sendFile(m.chat, stiker, 'stiker.webp', '', m)
         }
         else {
 
