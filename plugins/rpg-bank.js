@@ -27,7 +27,7 @@ let anu = `╭───❑ 「 𝐁𝐀𝐋𝐀𝐍𝐂𝐄 」 ❑────
            hydratedButtons: [{
              urlButton: {
                displayText: '💠 ɢɪᴛʜᴜʙ',
-               url: 'https://github.com/ilmanhdyt/ShiraoriBOT-Md'
+               url: 'https://github.com/elrebelde21/pruebabot'
              }
 
            },
