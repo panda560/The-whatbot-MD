@@ -1,8 +1,5 @@
 //=============『 owner 』================== //
-global.owner = [
-['56977774748', 'Creador', true], 
-['51935116539', 'Creador', true] 
-]
+global.owner = ['56977774748', '51935116539']
 global.mods = [] 
 global.prems = [] 
 
