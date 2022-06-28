@@ -23,9 +23,9 @@ global.fotonya1 = 'https://telegra.ph/file/e4a2f4339da8a32ad20a1.jpg' //cambia a
 global.fotonya2 = 'https://telegra.ph/file/8c471d45b6cedad43cf84.jpg' //cambiar esto también
 global.lolkey = 'Papah-Chan' //asi que es facil remplazarlo, por ejemplo el apikey esta caducado :v
 global.zenzkey = 'BagasPrdn' //cambiar a su apikey si caduca
-global.wm = 'The whatbot420-MD'
+global.wm = '𝐓𝐇𝐄 𝐖𝐇𝐀𝐓𝐁𝐎𝐓420-𝐌𝐃'
 global.watermark = wm
-global.wm2 = '                     「 The whatbot420-MD⁩ 」'
+global.wm2 = '                     「 T𝐓𝐇𝐄 𝐖𝐇𝐀𝐓𝐁𝐎𝐓420-𝐌𝐃⁩ 」'
 global.wm3 = 'superbot-𝙼𝙳'
 global.htki = '––––––『' 
 global.htka = '』––––––'
@@ -35,9 +35,9 @@ global.wait = '_*tunggu sedang di proses...*_'
 global.eror = '_*Server Error*_'
 global.benar = 'Benar ✅\n'
 global.salah = 'Salah ❌\n'
-global.stiker_wait = 'espere unos minutos'
-global.packname = 'toma tu sticker'
-global.author = '© The whatbot420-MD'
+global.stiker_wait = '𝙲𝚛𝚎𝚊𝚗𝚍𝚘 𝚜𝚝𝚒𝚌𝚔𝚎𝚛...'
+global.packname = 'ᕙ( ︡'︡益'︠)ง'
+global.author = '© 𝚃𝙷𝙴 𝚆𝙷𝙰𝚃𝙱𝙾𝚃-𝙼𝙳'
 
 //=============『 Apikey 』================== //
 global.APIs = { // API Prefix
