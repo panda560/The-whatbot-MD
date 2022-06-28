@@ -707,8 +707,8 @@ module.exports = {
                         } catch (e) {
                         } finally {
                             text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'se unio✨').replace('@subject', groupMetadata.subject).replace('@desc', groupMetadata.desc.toString()) :
-                                (chat.sBye || this.bye || conn.bye || 'se fue unos menos👋'))
-                                this.sendButtonImg(id, pp, text, "bienvenido", "chau puto🤑", "menu", null)
+                                (chat.sBye || this.bye || conn.bye || 'a'))
+                                this.sendButtonImg(id, pp, text, "se fue un randow", "chau puto🤑", "menu", null)
                                 }
                     }
                 }
