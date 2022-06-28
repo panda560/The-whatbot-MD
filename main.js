@@ -125,7 +125,7 @@ global.reloadHandler = function (restatConn) {
   }
 
   conn.welcome = '✦━━━━━━[ 𝐁𝐈𝐄𝐍𝐕𝐄𝐍𝐈𝐃𝐎 ]━━━━━━✦\n\n┏––––––━━━━━━━━•\n│⫹⫺ @subject\n┣━━━━━━━━┅┅┅\n│ *Hola, @user espero que la pase bien y leer la regla de grupo para no tener problema*\n┗––––––━━┅┅┅\n\n––––––┅┅ *𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽* ┅┅––––––\n@desc'
-  conn.bye = '✦━━━━━━[ *GOOD BYE* ]━━━━━━✦ @user Nadie lo queria 👋( ╹▽╹ )'
+  conn.bye = '✦━━━━━━[ *se fue* ]━━━━━━✦ @user Nadie lo queria 👋( ╹▽╹ )'
   conn.spromote = 'hey @user hora eres admin🤑!'
   conn.sdemote = 'hey @user ya no sos admin🥺!'
   conn.handler = handler.handler.bind(conn)
