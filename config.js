@@ -1,11 +1,12 @@
 //=============『 owner 』================== //
-global.owner = ['56977774748', '51935116539']
+global.owner = ['56977774748', 'a', true],
+['51935116539', 'a', true],
 global.mods = [] 
 global.prems = [] 
 
 //=============『 Info Owner 』============== //
-global.nameowner = 'creador'
-global.numberowner = '56977774748' , '51935116539'
+global.nameowner = 'creador' , 'creador' , true
+global.numberowner = '56977774748' , '51935116539' , true
 global.instagram = ''
 global.github = ''
 global.dana = '087892711054'
@@ -25,7 +26,7 @@ global.lolkey = 'Papah-Chan' //asi que es facil remplazarlo, por ejemplo el apik
 global.zenzkey = 'BagasPrdn' //cambiar a su apikey si caduca
 global.wm = '𝐓𝐇𝐄 𝐖𝐇𝐀𝐓𝐁𝐎𝐓420-𝐌𝐃'
 global.watermark = wm
-global.wm2 = '                     「 T𝐓𝐇𝐄 𝐖𝐇𝐀𝐓𝐁𝐎𝐓420-𝐌𝐃⁩ 」'
+global.wm2 = '                     「 𝐓𝐇𝐄 𝐖𝐇𝐀𝐓𝐁𝐎𝐓420-𝐌𝐃⁩ 」'
 global.wm3 = 'superbot-𝙼𝙳'
 global.htki = '––––––『' 
 global.htka = '』––––––'
