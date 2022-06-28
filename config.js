@@ -16,7 +16,7 @@ global.pulsa = '085212023766'
 global.gopay = '087892711054'
 
 //=============『 Info Bot 』=================//
-global.namebot = 'The whatbot420-MD'
+global.namebot = '𝚆𝙷𝙰𝚃𝙱𝙾𝚃𝟺𝟸𝟶-𝙼𝙳'
 global.gc = 'bit.ly/AnyaBot-Group'
 global.web = 'https://github.com/Hyzerr' //conviértalo en su sitio web, puede vincular ig, vincular github, vincular yt, si el enlace es gc, la visualización volverá a ser diferente.
 global.price1 = '1 bulan = 10.000\n2 Minggu 7.000\n1 Minggu 5.000'
