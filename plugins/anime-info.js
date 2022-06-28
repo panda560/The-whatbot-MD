@@ -5,19 +5,19 @@ let handler = async(m, { conn, text }) => {
   if (!res.ok) throw await res.text()
   let json = await res.json()
   let { title, members, synopsis, episodes, url, rated, score, image_url, type, start_date, end_date } = json.results[0]
-let animeingfo = `✨️ *Title:* ${title}
-🎆️ *Episodes:* ${episodes}
-➡️ *Start date:* ${start_date}
-🔚 *End date:* ${end_date}
-💬 *Show Type:* ${type}
-💌️ *Rating:* ${rated}
-❤️ *Score:* ${score}
-👥 *Members:* ${members}
-💚️ *Synopsis:* ${synopsis}
-🌐️ *URL*: ${url}`
+let animeingfo = `✨️ *𝚃𝙸𝚃𝚄𝙻𝙾 :* ${title}
+🎆️ *𝙴𝙿𝙸𝚂𝙾𝙳𝙸𝙾𝚂 :* ${episodes}
+➡️ *𝙵𝙴𝙲𝙷𝙰 𝙳𝙴 𝙸𝙽𝙸𝙲𝙸𝙾 :* ${start_date}
+🔚 *𝙵𝙴𝙲𝙷𝙰 𝙳𝙴 𝙵𝙸𝙽𝙰𝙻𝙸𝚉𝙰𝙲𝙸𝙾𝙽 :* ${end_date}
+💬 *𝚃𝙸𝙿𝙾 𝙳𝙴 𝚂𝙷𝙾𝚆:* ${type}
+💌️ *𝚁𝙰𝚃𝙸𝙽𝙶 :* ${rated}
+❤️ *𝚂𝙲𝙾𝚁𝙴 :* ${score}
+👥 *𝙼𝙸𝙴𝙼𝙱𝚁𝙾𝚂 :* ${members}
+💚️ *𝚂𝚈𝙽𝙾𝙿𝚂𝙸𝚂 :* ${synopsis}
+🌐️ *𝚄𝚁𝙻 :* ${url}`
   conn.sendFile(m.chat, image_url, '', animeingfo, m)
 }
-handler.help = ['anime <judul>']
+handler.help = ['anime <anime>']
 handler.tags = ['anime']
 handler.command = /^(anime|animeinfo)$/i
 //maapin fatur :<
