@@ -8,7 +8,7 @@ let handler = async(m, { text }) => {
 ╰┅────★
 `)
 }
-handler.help = ['afk [alasan]']
+handler.help = ['afk [motivo]']
 handler.tags = ['main']
 handler.command = /^afk$/i
 
