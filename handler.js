@@ -638,7 +638,7 @@ module.exports = {
                                 console.error(e)
                             }
                         }
-                        if (m.limit) m.reply(+ m.limit + ' Limit terpakai')
+                        if (m.limit) m.reply(+ m.limit + ' Limite usado')
                     }
                     break
                 }
@@ -706,9 +706,9 @@ module.exports = {
                             pp = await this.profilePictureUrl(user, 'image')
                         } catch (e) {
                         } finally {
-                            text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'se unio✨').replace('@subject', groupMetadata.subject).replace('@desc', groupMetadata.desc.toString()) :
-                                (chat.sBye || this.bye || conn.bye || 'a'))
-                                this.sendButtonImg(id, pp, text, "se fue un randow", "chau puto🤑", "menu", null)
+                            text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Yah,si Beban Masuk Grup').replace('@subject', groupMetadata.subject).replace('@desc', groupMetadata.desc.toString()) :
+                                (chat.sBye || this.bye || conn.bye || 'Sip, Beban Berkurang 1'))
+                                this.sendButtonImg(id, pp, text, "grupos", "xd", "wkwk", null)
                                 }
                     }
                 }
@@ -734,8 +734,7 @@ module.exports = {
         let chat = global.db.data.chats[msg.key.remoteJid] || {}
         if (chat.delete) return
         await this.reply(msg.key.remoteJid, `
-Terdeteksi @${participant.split`@`[0]} telah menghapus pesan
-Untuk mematikan fitur ini, ketik
+detectado @${participant.split`@`[0]} mensaje eliminado Para desactivar esta función, escriba
 *.enable delete*
 `.trim(), msg, {
             mentions: [participant]
