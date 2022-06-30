@@ -17,7 +17,7 @@ let handler = async (m, { conn }) => {
 📧 • *etiquetas:* @${who.replace(/@.+/, '')}
 📞 • *Número:* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
 💻 • *Link de num:* https://wa.me/${who.split`@`[0]}
-${registered ? '🎨 • *Age:* ' + age : ''}
+${registered ? '🎨 • *edad* ' + age : ''}
 
 🌟 • *Premium:* ${premium ? "✅" :"❌"}
 📑 • *Regístrado:* ${registered ? '✅': '❌'}
