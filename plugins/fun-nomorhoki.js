@@ -1,10 +1,10 @@
 let axios = require("axios");
 let handler = async(m, { conn, text }) => {
 
-    if (!text) return conn.reply(m.chat, 'Silahkan masukan nomor hpmu yang akan diartikan', m)
+    if (!text) return conn.reply(m.chat, 'ingrese sus numero de celular qie sera interpetado', m)
 
 	axios.get(`https://kocakz.herokuapp.com/api/primbon/nomorhoki?nomor=${text}`).then ((res) => {
-	 	let hasil = `Nomor HP : ${res.data.result.hoki}\nPositif : ${res.data.result.positif}\nNegatif : ${res.data.result.positif}`
+	 	let hasil = `Numero de teléfono : ${res.data.result.hoki}\nPositivo: ${res.data.result.positif}\nNegativo : ${res.data.result.positif}`
 
     conn.reply(m.chat, hasil, m)
 	})

@@ -5,10 +5,10 @@ handler.before = async function (m) {
     let id = m.chat
     if (!m.quoted || !m.quoted.fromMe || !m.quoted.isBaileys || !/Ketik.*calo/i.test(m.quoted.contentText)) return !0
     this.caklontong = this.caklontong ? this.caklontong : {}
-    if (!(id in this.caklontong)) return m.reply('Soal itu telah berakhir')
+    if (!(id in this.caklontong)) return m.reply('el asulto has terminado')
     if (m.quoted.id == this.caklontong[id][0].id) {
         let json = JSON.parse(JSON.stringify(this.caklontong[id][1]))
-        if (['.calo', 'Bantuan', ''].includes(m.text)) return !0
+        if (['.soltar', 'Ayuda', ''].includes(m.text)) return !0
         if (m.text.toLowerCase() == json.jawaban.toLowerCase().trim()) {
             global.db.data.users[m.sender].exp += this.caklontong[id][2]
             await this.sendBut(m.chat, `*Benar!* +${this.caklontong[id][2]} XP\n${json.deskripsi}`, wm, 'Cak Lontong', '.caklontong', m)
