@@ -12,16 +12,15 @@ let handler = async (m, { conn }) => {
     let username = conn.getName(who)
     let str = `
 
-✧───────[ *PROFILE* ]───────✧
-📇 • *Name:* ${username} ${registered ? '(' + name + ') ': ''}
-📧 • *Tag:* @${who.replace(/@.+/, '')}
-📞 • *Number:* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
-💻 • *Link:* https://wa.me/${who.split`@`[0]}
+✧───────[ *PERFIL* ]───────✧
+📇 • *nombre:* ${username} ${registered ? '(' + name + ') ': ''}
+📧 • *etiquetas:* @${who.replace(/@.+/, '')}
+📞 • *Número:* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
+💻 • *Link de num:* https://wa.me/${who.split`@`[0]}
 ${registered ? '🎨 • *Age:* ' + age : ''}
 
 🌟 • *Premium:* ${premium ? "✅" :"❌"}
-📑 • *Registered:* ${registered ? '✅': '❌'}
-⛔ • *Banned:* ❌
+📑 • *Regístrado:* ${registered ? '✅': '❌'}
 
 `.trim()
     let mentionedJid = [who]
@@ -30,5 +29,5 @@ ${registered ? '🎨 • *Age:* ' + age : ''}
 }
 handler.help = ['profile [@user]']
 handler.tags = ['tools']
-handler.command = /^profile|pp$/i
+handler.command = /^profile|perfil$/i
 module.exports = handler
