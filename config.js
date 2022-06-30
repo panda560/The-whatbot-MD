@@ -4,8 +4,8 @@ global.mods = []
 global.prems = [] 
 
 //=============『 Info Owner 』============== //
-global.nameowner = 'creador' , 'creador' , true
-global.numberowner = '56977774748' , '51935116539' , true
+global.nameowner = 'creador'
+global.numberowner = '56977774748' , '51935116539'
 global.instagram = ''
 global.github = ''
 global.dana = '087892711054'
@@ -31,10 +31,10 @@ global.htki = '––––––『'
 global.htka = '』––––––'
 global.media = 'https://telegra.ph/file/fed1c9d94b37511e570d5.mp4'
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=smurfs-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
-global.wait = '_*tunggu sedang di proses...*_'
-global.eror = '_*Server Error*_'
-global.benar = 'Benar ✅\n'
-global.salah = 'Salah ❌\n'
+global.wait = '_*espere unos minutos...*_'
+global.eror = '_*erro de servidor*_'
+global.benar = 'correcta ✅\n'
+global.salah = 'incorecta ❌\n'
 global.stiker_wait = '𝙲𝚛𝚎𝚊𝚗𝚍𝚘 𝚜𝚝𝚒𝚌𝚔𝚎𝚛...'
 global.packname = 'Toma tu sticker'
 global.author = '© 𝚃𝙷𝙴 𝚆𝙷𝙰𝚃𝙱𝙾𝚃-𝙼𝙳'

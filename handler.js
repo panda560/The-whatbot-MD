@@ -530,11 +530,11 @@ module.exports = {
                     let isAccept = plugin.command instanceof RegExp ? // RegExp Mode?
                         plugin.command.test(command) :
                         Array.isArray(plugin.command) ? // Array?
-                            plugin.command.some(cmd => cmd instanceof RegExp ? // RegExp in Array?
+                            plugin.command.some(cmd => cmd instanceof RegExp ? // RegExp en matriz?
                                 cmd.test(command) :
                                 cmd === command
                             ) :
-                            typeof plugin.command === 'string' ? // String?
+                            typeof plugin.command === 'string' ? // Cuerda?
                                 plugin.command === command :
                                 false
 
@@ -543,7 +543,7 @@ module.exports = {
                     if (m.chat in global.db.data.chats || m.sender in global.db.data.users) {
                         let chat = global.db.data.chats[m.chat]
                         let user = global.db.data.users[m.sender]
-                        if (name != 'unbanchat.js' && chat && chat.isBanned) return // Except this
+                        if (name != 'unbanchat.js' && chat && chat.isBanned) return // Excepto esto
                         if (name != 'unbanuser.js' && user && user.banned) return
                     }
                     if (plugin.rowner && plugin.owner && !(isROwner || isOwner)) { // Both Owner
@@ -566,35 +566,35 @@ module.exports = {
                         fail('premium', m, this)
                         continue
                     }
-                    if (plugin.group && !m.isGroup) { // Group Only
+                    if (plugin.group && !m.isGroup) { // Solo grupo
                         fail('group', m, this)
                         continue
-                    } else if (plugin.botAdmin && !isBotAdmin) { // You Admin
+                    } else if (plugin.botAdmin && !isBotAdmin) { // Tu administrador
                         fail('botAdmin', m, this)
                         continue
-                    } else if (plugin.admin && !isAdmin) { // User Admin
+                    } else if (plugin.admin && !isAdmin) { // Administrador de usuarios
                         fail('admin', m, this)
                         continue
                     }
-                    if (plugin.private && m.isGroup) { // Private Chat Only
+                    if (plugin.private && m.isGroup) { // Solo chat privado
                         fail('private', m, this)
                         continue
                     }
-                    if (plugin.register == true && _user.registered == false) { // Butuh daftar?
+                    if (plugin.register == true && _user.registered == false) { // Necesitas una lista?
                         fail('unreg', m, this)
                         continue
                     }
                     m.isCommand = true
-                    let xp = 'exp' in plugin ? parseInt(plugin.exp) : 17 // XP Earning per command
-                    if (xp > 200) m.reply('Ngecit -_-') // Hehehe
+                    let xp = 'exp' in plugin ? parseInt(plugin.exp) : 17 // XP Ganancia por comando
+                    if (xp > 200) m.reply('espere -_-') // Hehehe
                     else m.exp += xp
                     if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-                        this.reply(m.chat, `Limit anda habis, silahkan beli melalui *${usedPrefix}buy*`, m)
-                        continue // Limit habis
+                        this.reply(m.chat, `no tiene mas limite, compre a traves de *${usedPrefix}buy*`, m)
+                        continue // Límite agotado
                     }
                     if (plugin.level > _user.level) {
-                        this.reply(m.chat, `diperlukan level ${plugin.level} untuk menggunakan perintah ini. Level kamu ${_user.level}`, m)
-                        continue // If the level has not been reached
+                        this.reply(m.chat, `livel requerido ${plugin.level} para usar este comando. tu nivel ${_user.level}`, m)
+                        continue // el nivel no ha sido alcanzado
                     }
                     let extra = {
                         match,
@@ -690,7 +690,7 @@ module.exports = {
     },
     async participantsUpdate({ id, participants, action }) {
         if (opts['self']) return
-        // if (id in conn.chats) return // First login will spam
+        // if (id in conn.chats) return // El primer inicio de sesión generará spam
         if (global.isInit) return
         let chat = global.db.data.chats[id] || {}
         let fetch = require('node-fetch')
@@ -706,8 +706,8 @@ module.exports = {
                             pp = await this.profilePictureUrl(user, 'image')
                         } catch (e) {
                         } finally {
-                            text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Yah,si Beban Masuk Grup').replace('@subject', groupMetadata.subject).replace('@desc', groupMetadata.desc.toString()) :
-                                (chat.sBye || this.bye || conn.bye || 'Sip, Beban Berkurang 1'))
+                            text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'se unio, bienvenido wey').replace('@subject', groupMetadata.subject).replace('@desc', groupMetadata.desc.toString()) :
+                                (chat.sBye || this.bye || conn.bye || 'se fue, unos menos 1'))
                                 this.sendButtonImg(id, pp, text, "grupos", "xd", "wkwk", null)
                                 }
                     }
