@@ -1,4 +1,4 @@
-console.log('Starting...')
+console.log('iniciado...')
 let cluster = require('cluster')
 let path = require('path')
 let fs = require('fs')
@@ -8,7 +8,7 @@ const Readline = require('readline')
 const yargs = require('yargs/yargs')
 const rl = Readline.createInterface(process.stdin, process.stdout)
 
-CFonts.say('ShiraoriBOT\nMulti-device ', {
+CFonts.say('The whatbot420\nMulti-device ', {
   font: 'chrome',
   align: 'center',
   gradient: ['red', 'magenta']
@@ -53,7 +53,7 @@ function start(file) {
   })
   p.on('exit', code => {
     isRunning = false
-    console.error('Exited with code:', code)
+    console.error('ocurrio un erro inesperado u.u.u:', code)
     if (code === 0) return
     fs.watchFile(args[0], () => {
       fs.unwatchFile(args[0])
