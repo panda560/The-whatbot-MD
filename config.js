@@ -6,6 +6,9 @@ global.prems = []
 //=============『 Info Owner 』============== //
 global.nameowner = '✨ the whatbot420-𝑴𝑫 ✨' //Nombre del Bot
 global.numberowner = '56977774748'
+global.nameowner2 = '░▒▓█►─═  𝙼𝙸𝚂𝙰𝙴𝙻 ═─◄█▓▒░' //Nombre del Bot
+global.numberowner2 = '51935116539'
+
 global.instagram = ''
 global.github = ''
 global.dana = '087892711054'
