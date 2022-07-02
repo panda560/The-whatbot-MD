@@ -8,6 +8,7 @@ let fetch = require('node-fetch')
 let fs = require('fs')
 let handler = async(m, { conn }) => {
 conn.sendContact(m.chat, numberowner, nameowner, m) 
+conn.sendContact(m.chat, numberowner2, nameowner2, m) 
 	
 	//let pp = 'https://c.tenor.com/XOJyPTMOUT8AAAAd/cosmos-universo.mp4'
 let text = `*Hola! mi creador es wa.me/56977774748* 
