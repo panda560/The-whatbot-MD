@@ -9,11 +9,9 @@ let fs = require('fs')
 let handler = async(m, { conn }) => {
 conn.sendContact(m.chat, numberowner, nameowner, m) 
 conn.sendContact(m.chat, numberowner2, nameowner2, m) 
-conn.sendContact(m.chat, numberowner3, nameowner3, m) 
 	
 	//let pp = 'https://c.tenor.com/XOJyPTMOUT8AAAAd/cosmos-universo.mp4'
-let text = `*Hola! mi creador es wa.me/56977774748* 
-*wa.me/51935116539* 
+let text = `*Hola ese es mi desarrollo/creador hablarle por cosa de bot*
 *Esos son los Contactos disponibles!*`
   let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu/menuvid.mp4'), gifPlayback: true }, { upload: conn.waUploadToServer })
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
