@@ -4,10 +4,12 @@ global.mods = []
 global.prems = [] 
 
 //=============『 Info Owner 』============== //
-global.nameowner = '✨ the whatbot420-𝑴𝑫 ✨' //Nombre del Bot
-global.numberowner = '56977774748'
+global.nameowner = 'Whatsapp' //Nombre del Bot
+global.numberowner = '0'
 global.nameowner2 = '░▒▓█►─═  𝙼𝙸𝚂𝙰𝙴𝙻 ═─◄█▓▒░' //Nombre del Bot
 global.numberowner2 = '51935116539'
+global.nameowner3 = '•——◤𝚆𝙷𝙰𝚃𝙱𝙾𝚃-𝙼𝙳◥——•' //Nombre del Bot
+global.numberowner3 = '5697774847'
 
 global.instagram = ''
 global.github = ''
