@@ -1,15 +1,13 @@
 //=============『 owner 』================== //
 global.owner = ['56977774748', '51935116539']
-global.mods = [] 
+global.mods = ['5492266613038'] 
 global.prems = [] 
 
 //=============『 Info Owner 』============== //
-global.nameowner = 'Whatsapp' //Nombre del Bot
-global.numberowner = '0'
+global.nameowner = '𑄒𑄴𑄬𑄲𑄰𑅆ڜel rebelde𖠄' //Nombre del Bot
+global.numberowner = '5492266613038'
 global.nameowner2 = '░▒▓█►─═  𝙼𝙸𝚂𝙰𝙴𝙻 ═─◄█▓▒░' //Nombre del Bot
 global.numberowner2 = '51935116539'
-global.nameowner3 = '•——◤𝚆𝙷𝙰𝚃𝙱𝙾𝚃-𝙼𝙳◥——•' //Nombre del Bot
-global.numberowner3 = '5697774847'
 
 global.instagram = ''
 global.github = ''
@@ -19,7 +17,7 @@ global.gopay = '087892711054'
 
 //=============『 Info Bot 』=================//
 global.namebot = '𝚆𝙷𝙰𝚃𝙱𝙾𝚃𝟺𝟸𝟶-𝙼𝙳'
-global.gc = 'bit.ly/AnyaBot-Group'
+global.gc = 'https://facebook.com/groups/721802642266362/'
 global.web = 'https://github.com/Hyzerr' //conviértalo en su sitio web, puede vincular ig, vincular github, vincular yt, si el enlace es gc, la visualización volverá a ser diferente.
 global.price1 = '1 bulan = 10.000\n2 Minggu 7.000\n1 Minggu 5.000'
 
