@@ -49,6 +49,9 @@ https://chat.whatsapp.com/DO1IQunLpr73RTXy21Ucak
 *amistad y los q pinte*
 https://chat.whatsapp.com/GPXwomXZIGn9rQsHZtPeAv
 
+*ℂ𝔸𝕊𝕋𝕀ℕ𝔾 𝔻𝔼 𝕍𝕆ℤ (𝔹𝕆𝕋)😎👌*
+https://chat.whatsapp.com/BMqdPDto6Uz5tFMMJVTrlO
+
 *᳄⃢🇦🇴‐⃬⃟ʟɪʟ ᴘΣᵉp🪦⃤⃢🏴‍☠️࿐*
 https://chat.whatsapp.com/LPGubFHHuXuCuMoyQjQ8iZ
 
