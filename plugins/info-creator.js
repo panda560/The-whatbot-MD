@@ -7,7 +7,7 @@ const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessa
 let fetch = require('node-fetch')
 let fs = require('fs')
 let handler = async(m, { conn }) => {
-conn.sendContact(m.chat, numberowner, nameowner, m) 
+conn.sendContact(m.chat, numberowner3, nameowner3, m) 
 conn.sendContact(m.chat, numberowner2, nameowner2, m) 
 	
 	//let pp = 'https://c.tenor.com/XOJyPTMOUT8AAAAd/cosmos-universo.mp4'
@@ -29,8 +29,8 @@ let text = `*Hola! mi creador es wa.me/56977774748*
             },
               {
               urlButton: {
-               displayText: 'GRUPOS',
-               url: 'https://chat.whatsapp.com/Lus9S60MABnH9lF4Wf2T7k'	           
+               displayText: 'GRUPOS ASISTENCIA',
+               url: 'https://facebook.com/groups/721802642266362/'	           
              }
            },
              {
@@ -57,4 +57,4 @@ handler.command = /^(contacto|owner|creator|propietario|dueño|dueña|propietari
 
 module.exports = handler
 
-// MultiverseBot-MD
+// the whatBot-MD
