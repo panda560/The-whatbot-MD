@@ -288,7 +288,7 @@ let menuu = `╭─「 𝐒𝐔𝐏𝐄𝐑𝐁𝐎𝐓 - 𝐌𝐃 」
 ║
 ║❥𝙱𝚊𝚗𝚎𝚊𝚍𝚘: ✘
 ║
-║❥𝙶𝚛𝚞𝚙𝚘: https://chat.whatsapp.com/Lus9S60MABnH9lF4Wf2T7k
+║❥𝙶𝚛𝚞𝚙𝚘: https://chat.whatsapp.com/CFSvSOGCnuL3vk4Js1DWI2
 ║
 ║❥𝚃𝚒𝚎𝚖𝚙𝚘 𝙰𝚌𝚝𝚒𝚟𝚘: ${uptime}
 ║
