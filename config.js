@@ -4,9 +4,9 @@ global.mods = ['5492266613038']
 global.prems = [] 
 
 //=============『 Info Owner 』============== //
-global.nameowner = '𑄒𑄴𑄬𑄲𑄰𑅆ڜel rebelde𖠄' //Nombre del Bot
+global.nameowner = '𑄒𑄴𑄬𑄲𑄰𑅆ڜel rebelde𖠄' //Nombre del creador
 global.numberowner = '5492266613038'
-global.nameowner2 = '░▒▓█►─═  𝙼𝙸𝚂𝙰𝙴𝙻 ═─◄█▓▒░' //Nombre del Bot
+global.nameowner2 = '░▒▓█►─═  𝙼𝙸𝚂𝙰𝙴𝙻 ═─◄█▓▒░' //Nombre del creador2
 global.numberowner2 = '51935116539'
 
 global.instagram = ''
