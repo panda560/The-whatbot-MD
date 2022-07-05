@@ -1,23 +1,23 @@
 //=============『 owner 』================== //
-global.owner = ['56977774748', '51935116539']
-global.mods = ['212614486339'] 
+global.owner = ['6281273677810', '6281959293465',  '66986609139',  '84796102942']
+global.mods = ['6281273677810'] 
 global.prems = [] 
 
 //=============『 Info Owner 』============== //
-global.nameowner = '𑄒𑄴𑄬𑄲𑄰𑅆ڜel rebelde𖠄' //Nombre del creador
-global.numberowner = '212614486339'
-global.nameowner2 = '░▒▓█►─═  𝙼𝙸𝚂𝙰𝙴𝙻 ═─◄█▓▒░' //Nombre del creador2
-global.numberowner2 = '51935116539'
+global.nameowner = '𑄒𑄴𑄬𑄲𑄰𑅆Pratama𖠄' //Nombre del creador
+global.numberowner = '6281273677810'
+global.nameowner2 = '░▒▓█►─═  Muhammad ═─◄█▓▒░' //Nombre del creador2
+global.numberowner2 = '6281273677810'
 
-global.instagram = ''
+global.instagram = 'https://www.instagram.com/invites/contact/?i=18n050noxcaqr&utm_content=4fkjlpc'
 global.github = ''
-global.dana = '087892711054'
-global.pulsa = '085212023766'
-global.gopay = '087892711054'
+global.dana = '-'
+global.pulsa = '+62 819-5929-3465'
+global.gopay = '+6281273677810'
 
 //=============『 Info Bot 』=================//
-global.namebot = '𝚆𝙷𝙰𝚃𝙱𝙾𝚃𝟺𝟸𝟶-𝙼𝙳'
-global.gc = 'https://facebook.com/groups/721802642266362/'
+global.namebot = 'Pratama𝟺𝟸𝟶-𝙼𝙳'
+global.gc = 'https://chat.whatsapp.com/C6ahuoDnxXh9zbDnw9wYrb'
 global.web = 'https://github.com/Hyzerr' //conviértalo en su sitio web, puede vincular ig, vincular github, vincular yt, si el enlace es gc, la visualización volverá a ser diferente.
 global.price1 = '1 bulan = 10.000\n2 Minggu 7.000\n1 Minggu 5.000'
 
@@ -26,10 +26,10 @@ global.fotonya1 = 'https://telegra.ph/file/e4a2f4339da8a32ad20a1.jpg' //cambia a
 global.fotonya2 = 'https://telegra.ph/file/8c471d45b6cedad43cf84.jpg' //cambiar esto también
 global.lolkey = 'Papah-Chan' //asi que es facil remplazarlo, por ejemplo el apikey esta caducado :v
 global.zenzkey = 'BagasPrdn' //cambiar a su apikey si caduca
-global.wm = '𝐓𝐇𝐄 𝐖𝐇𝐀𝐓𝐁𝐎𝐓420-𝐌𝐃'
+global.wm = 'Pratama420-𝐌𝐃'
 global.watermark = wm
-global.wm2 = '                     「 𝐓𝐇𝐄 𝐖𝐇𝐀𝐓𝐁𝐎𝐓420-𝐌𝐃⁩ 」'
-global.wm3 = 'superbot-𝙼𝙳'
+global.wm2 = '                     「 Pratama420-𝐌𝐃⁩ 」'
+global.wm3 = 'M.A.F.PRATAMA'
 global.htki = '––––––『' 
 global.htka = '』––––––'
 global.media = 'https://telegra.ph/file/fed1c9d94b37511e570d5.mp4'
@@ -39,8 +39,8 @@ global.eror = '_*erro de servidor*_'
 global.benar = 'correcta ✅\n'
 global.salah = 'incorecta ❌\n'
 global.stiker_wait = '𝙲𝚛𝚎𝚊𝚗𝚍𝚘 𝚜𝚝𝚒𝚌𝚔𝚎𝚛...'
-global.packname = 'Toma tu sticker'
-global.author = '© 𝚃𝙷𝙴 𝚆𝙷𝙰𝚃𝙱𝙾𝚃-𝙼𝙳'
+global.packname = 'M.A.F.PRATAMA'
+global.author = '© PratamaBotོ'-𝙼𝙳'
 
 //=============『 Apikey 』================== //
 global.APIs = { // API Prefix
